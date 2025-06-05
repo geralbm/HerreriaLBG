@@ -1,0 +1,124 @@
+
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Seteo Genérico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+/******************** ESTILO NAVBAR ********************/
+.header {
+    display: flex;
+    border-top-left-radius:60px;
+    border-bottom-right-radius: 60px;
+    border: 1.5px solid rgba(145, 140, 140, 0.704);
+    background-color: rgba(0, 0, 0, 0.918);
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+}
+
+
+/* Estilo del Logo */
+.navbar a img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 30px;
+    border-radius: 50% 0% 50% 0%;
+    border: 2px solid;
+    border-color:rgba(128, 128, 128, 0.357);
+    float: inline-start;
+    
+    
+}
+.navbar a img:hover {
+    transform: scale(1.2);
+    
+}
+
+/* Estilo del Titulo Principal */
+h1 {
+    display:flex;
+    font-weight: 70rem;
+    font-style:bold;
+    color: #eee6e690;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-align: justify;
+    padding:.9375rem;
+    
+    
+}
+/* Estilo de Menu & sub menu */
+.navbar .menu  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float:right;
+    
+}
+.navbar .menu li{
+    display:inline-block;
+    letter-spacing: 2px;
+    
+}
+
+.navbar .menu li:hover ul {
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    
+    
+}
+.navbar .menu li ul{
+    display: none; 
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: rgb(195, 123, 28);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px; 
+
+}
+
+/* Estilo de combo de Busqueda - Menu */
+.btn_busqueda{
+    font-size: .8125rem;
+    color:rgb(195, 123, 28);
+    font-weight: bold;
+    
+}
+
+/******************** ESTILO DEL MAIN ********************/
+
+
+/******************** ESTILO DEL FOOTER ********************/
+.homeFooter {
+    background-color:rgb(195, 123, 28); 
+    width: auto;
+    height: 75%;
+    
+}
+
+.homeFooter div a {
+    margin: .625rem;
+    letter-spacing: .125rem;
+}
+
+.homeFooter div ul  {
+    margin: .625rem;
+    color: rgb(198, 190, 190);
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: .1875rem;
+}
