@@ -27,7 +27,7 @@
 
 /* Estilo del Logo */
 .navbar a img{
-    height: 70px;
+    height: 90px;
     width: auto;
     transition: all 0.3s;
     border-radius: 30px;
@@ -51,23 +51,36 @@ h1 {
     color: #eee6e690;
     font-weight: bolder;
     letter-spacing: 5px;
-    text-align: justify;
-    padding:.9375rem;
+    justify-content: left;
+    padding:0;
+    margin:0;
     
     
 }
+/* Estilos de Titulos de Sub - Páginas */
+h2{
+    display: flex;
+    font-style:bold;
+    color: rgb(195, 123, 28);
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-align: justify;
+    margin:5px;
+}
 /* Estilo de Menu & sub menu */
 .navbar .menu  {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
     float:right;
     
+    
 }
 .navbar .menu li{
-    display:inline-block;
+    display: flex;
     letter-spacing: 2px;
-    
+    align-items: center;
 }
 
 .navbar .menu li:hover ul {
@@ -80,9 +93,12 @@ h1 {
 }
 .navbar .menu li ul{
     display: none; 
+    
 }
 
 .navbar .menu a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: rgb(195, 123, 28);
     font-family: "Poppins", sans-serif;
@@ -91,15 +107,128 @@ h1 {
 
 }
 
+.menu .sub_menu1 li a{
+    color: seashell;
+}
 /* Estilo de combo de Busqueda - Menu */
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.busqueda input{
+    display: flex;
+    justify-content: right;
+    align-items:left;
+    width: auto;
+    height: 15%;
+    font-size: 0.9rem;
+    margin: 1%;
+    padding: 1.5%;
+    border-radius: 10px;
+    border-color:rgba(214, 160, 90, 0.699);  
+    
+    
+    
+}
 .btn_busqueda{
-    font-size: .8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
     color:rgb(195, 123, 28);
+    border-color:rgba(214, 160, 90, 0.699);  
     font-weight: bold;
+    width: alto;
+    height: 90%;
+    margin: 1%;   
+    padding: 1.5%;
+    border-radius: 3px;
+}
+
+/********************ESTILO DEL FORMULARIO DE CONTACTOS ********************/
+container .col-sm-9 .my-auto{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    max-width: auto;
+    width: auto;
+    height: 100%;
+    font-family: "Poppins", sans-serif;    
+}
+
+.subtit {
+    color: rgba(20, 18, 18, 0.609);
+    font-weight: bold;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+}
+
+.form-control {
+    background-color: rgba(201, 190, 190, 0.544);
+    font-size: 0.8rem;
+    border-color:rgba(214, 160, 90, 0.699);  
+    width: auto;
+    height: 35px;
+    
+}
+span {
+    color: rgb(194, 47, 47);
+    font-size: 10px;
+}
+
+.form-group label, label {
+    color: rgba(0, 0, 0, 0.642);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.form-group select option {
+    font-size: 11px;
+}
+
+.form-group input, input, .form-control, .input-group-text, .form-select {
+    font-size: 0.8rem;
+    color: rgba(84, 75, 71, 0.683);
     
 }
 
-/******************** ESTILO DEL MAIN ********************/
+.form-group textarea {
+    display: flex;
+    resize: auto;
+    width:  592px;
+    height: 250px;
+}
+
+.form-group p {
+    font-size: 0.7rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Botones: Del Formulario de contactos */
+
+.form-group .btn {
+    color:rgb(195, 123, 28);
+    border-color: rgba(105, 91, 91, 0.74);
+    font-family: "Poppins", sans-serif;
+}
+
+.form-group a{
+    font-size: 85%;
+}
+
+.form-group .btn:hover{
+    background-color:#000000;
+    color:rgb(230, 230, 223);
+    border-color: rgba(20, 18, 18, 0.609);
+    font-family: "Poppins", sans-serif;
+}
+
 
 
 /******************** ESTILO DEL FOOTER ********************/
@@ -107,18 +236,34 @@ h1 {
     background-color:rgb(195, 123, 28); 
     width: auto;
     height: 75%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px 5px  rgba(36, 35, 35, 0.568);
+    border-radius: 0% 25% 0% 25%;
     
 }
 
 .homeFooter div a {
+    display: flex;
     margin: .625rem;
     letter-spacing: .125rem;
+    font-size: 12px;
+    color: #aa2626d2;
+    font-weight: bolder;
+    
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
 }
 
-.homeFooter div ul  {
+.homeFooter div ul {
     margin: .625rem;
-    color: rgb(198, 190, 190);
-    text-align: center;
+    color: rgb(20, 20, 20);
     font-weight: bolder;
     letter-spacing: .1875rem;
+    font-size: 0.625rem;
+    padding: 5px;
+    font-style: italic;
+    list-style:none;
+    text-align: center;
 }
