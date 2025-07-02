@@ -22,10 +22,11 @@
     align-items: center;
     height: auto;
     padding: 5px;
+
 }
 
 
-/* Estilo del Logo */
+/******************** ESTILO DEL LOGO ********************/
 .navbar a img{
     height: 90px;
     width: auto;
@@ -43,7 +44,7 @@
     
 }
 
-/* Estilo del Titulo Principal */
+/************** ESTILO DEL TITULO PRINCIPAL ************/
 h1 {
     display:flex;
     font-weight: 70rem;
@@ -57,7 +58,7 @@ h1 {
     
     
 }
-/* Estilos de Titulos de Sub - Páginas */
+/*********** Estilos de Titulos de Sub - Páginas **********/
 h2{
     display: flex;
     font-style:bold;
@@ -67,7 +68,7 @@ h2{
     text-align: justify;
     margin:5px;
 }
-/* Estilo de Menu & sub menu */
+/**************** Estilo de Menu & sub menu *************/
 .navbar .menu  {
     display: flex;
     list-style: none;
@@ -110,7 +111,11 @@ h2{
 .menu .sub_menu1 li a{
     color: seashell;
 }
-/* Estilo de combo de Busqueda - Menu */
+
+main{
+    min-height: 100vh;
+}
+/******** Estilo de combo de Busqueda - Menu ********/
 
 .busqueda{
     display: flex;
@@ -147,15 +152,16 @@ h2{
     border-radius: 3px;
 }
 
-/********************ESTILO DEL FORMULARIO DE CONTACTOS ********************/
+
+/************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
 container .col-sm-9 .my-auto{
     display: flex;
     justify-content: center;
     align-items: left;
     max-width: auto;
-    width: auto;
     height: 100%;
-    font-family: "Poppins", sans-serif;    
+    font-family: "Poppins", sans-serif;  
+    
 }
 
 .subtit {
@@ -210,7 +216,7 @@ span {
     font-family: "Poppins", sans-serif;
 }
 
-/* Botones: Del Formulario de contactos */
+/*********** Botones: Del Formulario de contactos **********/
 
 .form-group .btn {
     color:rgb(195, 123, 28);
@@ -235,12 +241,13 @@ span {
 .homeFooter {
     background-color:rgb(195, 123, 28); 
     width: auto;
-    height: 75%;
+    height: 100px;
     display: flex;
     justify-content: center;
     box-shadow: 0 0 15px 5px  rgba(36, 35, 35, 0.568);
     border-radius: 0% 25% 0% 25%;
     
+
 }
 
 .homeFooter div a {
@@ -250,7 +257,6 @@ span {
     font-size: 12px;
     color: #aa2626d2;
     font-weight: bolder;
-    
     text-align: center;
     padding: 5px;
     text-decoration: underline;
