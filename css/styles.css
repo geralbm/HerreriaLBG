@@ -35,7 +35,7 @@
     border-radius: 50% 0% 50% 0%;
     border: 2px solid;
     border-color:rgba(128, 128, 128, 0.357);
-    float: inline-start;
+    float: left;
     
     
 }
@@ -58,7 +58,7 @@ h1 {
     
     
 }
-/*********** Estilos de Titulos de Sub - Páginas **********/
+/******** Estilos de Titulos de Sub - Páginas ********/
 h2{
     display: flex;
     font-style:bold;
@@ -114,6 +114,7 @@ h2{
 
 main{
     min-height: 100vh;
+    
 }
 /******** Estilo de combo de Busqueda - Menu ********/
 
@@ -154,7 +155,7 @@ main{
 
 
 /************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
-container .col-sm-9 .my-auto{
+.container .col-sm-9 .my-auto{
     display: flex;
     justify-content: center;
     align-items: left;
@@ -165,6 +166,7 @@ container .col-sm-9 .my-auto{
 }
 
 .subtit {
+    display: flex;
     color: rgba(20, 18, 18, 0.609);
     font-weight: bold;
     word-spacing: 8px;
@@ -172,6 +174,7 @@ container .col-sm-9 .my-auto{
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     margin: 0;
+    
 
 }
 
@@ -181,6 +184,7 @@ container .col-sm-9 .my-auto{
     border-color:rgba(214, 160, 90, 0.699);  
     width: auto;
     height: 35px;
+    display: flex;
     
 }
 span {
@@ -272,4 +276,122 @@ span {
     font-style: italic;
     list-style:none;
     text-align: center;
+}
+
+
+/* Media Query */
+
+/* Media Query - Movile */
+@media (min-width: 375px) and (max-width: 768px){
+    /* NavBar Movile*/
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Logo Movile */
+    .navbar a img{
+        display: flex;
+        height: 40px;
+        margin:5px;
+    }
+    /* Titulo Principal Movile */
+    h1{
+        display: flex;
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    .busqueda{
+        height: 18px;
+    }
+    .busqueda input, .btn_busqueda{
+        font-size: 8px;
+        width: auto;
+        height: 15px;
+    }
+    
+    
+    .navbar .menu {
+        display:inline-block;
+        font-size: 9px;
+        flex-direction: column;
+        
+    }
+    
+    .menu .sub_menu1 li a{
+    font-size: 8px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    /* Form Contacto Movile */
+    .subtit{
+        font-size: 11px;
+    }
+
+    .form-group label, label{
+        font-size: 9px;
+    }
+
+    span {
+        font-size: 8px;
+    }
+    .form-group input, input, .form-control, .input-group-text, .form-select{
+        font-size: 9px;
+        width: auto;
+        height: 18px;
+    }
+
+    .form-group select option {
+    font-size: 9px;
+    }
+    .form-group textarea {
+    display: flex;
+    resize: auto;
+    width:  333px;
+    height: 281px;
+    }
+    .form-group p {
+    font-size: .5625rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    }
+
+    /* Botones: Del Formulario de contactos Movile */
+    .form-group .btn {
+        margin:0;
+        padding: 0;
+        width: 80px;
+        height: 20px;
+    }
+
+    .form-group a{
+        font-size: 10px;
+
+    }
+
+    /* Footer Movile */
+    .homeFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeFooter div a {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        
+    }
+
+    .homeFooter div ul {
+        display: flex;
+        font-size: 9px;
+        flex-direction: column;
+        align-items: start;    
+    }
 }
