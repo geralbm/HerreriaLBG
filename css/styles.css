@@ -8,7 +8,6 @@
     margin: 0;
     padding:0;
     font-family: "Poppins", sans-serif;
-    
 }
 
 /******************** ESTILO NAVBAR ********************/
@@ -22,7 +21,6 @@
     align-items: center;
     height: auto;
     padding: 5px;
-
 }
 
 
@@ -36,8 +34,6 @@
     border: 2px solid;
     border-color:rgba(128, 128, 128, 0.357);
     float: left;
-    
-    
 }
 .navbar a img:hover {
     transform: scale(1.2);
@@ -55,8 +51,6 @@ h1 {
     justify-content: left;
     padding:0;
     margin:0;
-    
-    
 }
 /******** Estilos de Titulos de Sub - Páginas ********/
 h2{
@@ -75,8 +69,6 @@ h2{
     padding: 0;
     margin: 0;
     float:right;
-    
-    
 }
 .navbar .menu li{
     display: flex;
@@ -89,12 +81,9 @@ h2{
     flex-direction: column;
     font-size: .75rem;
     letter-spacing: 2px;
-    
-    
 }
 .navbar .menu li ul{
     display: none; 
-    
 }
 
 .navbar .menu a{
@@ -105,7 +94,6 @@ h2{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     padding: 10px 20px; 
-
 }
 
 .menu .sub_menu1 li a{
@@ -114,7 +102,6 @@ h2{
 
 main{
     min-height: 100vh;
-    
 }
 /******** Estilo de combo de Busqueda - Menu ********/
 
@@ -134,9 +121,6 @@ main{
     padding: 1.5%;
     border-radius: 10px;
     border-color:rgba(214, 160, 90, 0.699);  
-    
-    
-    
 }
 .btn_busqueda{
     display: flex;
@@ -162,7 +146,6 @@ main{
     max-width: auto;
     height: 100%;
     font-family: "Poppins", sans-serif;  
-    
 }
 
 .subtit {
@@ -174,8 +157,6 @@ main{
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     margin: 0;
-    
-
 }
 
 .form-control {
@@ -185,11 +166,10 @@ main{
     width: auto;
     height: 35px;
     display: flex;
-    
 }
 span {
     color: rgb(194, 47, 47);
-    font-size: 10px;
+    font-size: .625rem;
 }
 
 .form-group label, label {
@@ -198,13 +178,12 @@ span {
     font-size: 0.8rem;
 }
 .form-group select option {
-    font-size: 11px;
+    font-size: .6875rem;
 }
 
 .form-group input, input, .form-control, .input-group-text, .form-select {
     font-size: 0.8rem;
     color: rgba(84, 75, 71, 0.683);
-    
 }
 
 .form-group textarea {
@@ -250,15 +229,13 @@ span {
     justify-content: center;
     box-shadow: 0 0 15px 5px  rgba(36, 35, 35, 0.568);
     border-radius: 0% 25% 0% 25%;
-    
-
 }
 
 .homeFooter div a {
     display: flex;
     margin: .625rem;
     letter-spacing: .125rem;
-    font-size: 12px;
+    font-size: .75rem;
     color: #aa2626d2;
     font-weight: bolder;
     text-align: center;
@@ -279,7 +256,7 @@ span {
 }
 
 
-/* Media Query */
+/******************* Media Query - Responsivo ********************/
 
 /* Media Query - Movile */
 @media (min-width: 375px) and (max-width: 768px){
@@ -303,60 +280,63 @@ span {
     /* Titulo Principal Movile */
     h1{
         display: flex;
-        font-size: 10px;
+        font-size: .625rem;    
         margin: 5px;
     }
 
-    .busqueda{
-        height: 18px;
-    }
     .busqueda input, .btn_busqueda{
-        font-size: 8px;
+        font-size: .5rem;
         width: auto;
         height: 15px;
     }
-    
+
+        .busqueda{
+        height: 18px;
+    }
     
     .navbar .menu {
         display:inline-block;
-        font-size: 9px;
+        font-size: .5625rem;
         flex-direction: column;
-        
     }
     
     .menu .sub_menu1 li a{
-    font-size: 8px;
+        font-size: .5rem;
     }
+
     h2{
-        font-size: 15px;
+        font-size: .9375rem;
     }
+
     /* Form Contacto Movile */
     .subtit{
-        font-size: 11px;
+        font-size: .6875rem;
     }
 
     .form-group label, label{
-        font-size: 9px;
+        font-size: .5625rem;
     }
 
     span {
-        font-size: 8px;
+        font-size: .5rem;
     }
     .form-group input, input, .form-control, .input-group-text, .form-select{
-        font-size: 9px;
+        font-size: .5625rem;
         width: auto;
         height: 18px;
     }
 
     .form-group select option {
-    font-size: 9px;
+    font-size: .5625rem;
     }
+
     .form-group textarea {
     display: flex;
     resize: auto;
     width:  333px;
     height: 281px;
     }
+
     .form-group p {
     font-size: .5625rem;
     font-style: italic;
@@ -372,8 +352,7 @@ span {
     }
 
     .form-group a{
-        font-size: 10px;
-
+        font-size: .625rem;
     }
 
     /* Footer Movile */
@@ -381,17 +360,123 @@ span {
         display: flex;
         flex-direction: column;
     }
+
     .homeFooter div a {
         display: flex;
         align-items: center;
-        font-size: 10px;
-        
+        font-size: .625rem;
     }
 
     .homeFooter div ul {
         display: flex;
-        font-size: 9px;
+        font-size: .5625rem;
         flex-direction: column;
         align-items: start;    
     }
+}
+
+/* Media Query - Tablet*/
+@media (min-width: 768px) and (max-width: 992px){
+    /* Logo Movile */
+    .navbar a img{
+        display: flex;
+        height: 80px;
+        margin:7px;
+    }
+
+    /* Titulo Principal Movile */
+    h1{
+        display: flex;
+        font-size: 1.25rem;   
+        margin: 7px;
+    }
+
+    .busqueda input, .btn_busqueda{
+        font-size: .75rem;
+        width: auto;
+        height: 25px;
+    }
+
+    .busqueda{
+        height: 60%;
+        width: auto;
+    }
+
+        .navbar .menu {
+        display:inline-block;
+        font-size: .875rem;
+        flex-direction: column;
+    }
+    
+    .menu .sub_menu1 li a{
+        font-size: .75rem;
+    }
+
+        h2{
+        font-size: 1.0625rem;
+        margin: 2px;
+        padding: 10px;
+    }
+
+        /* Form Contacto Tablet */
+    .subtit{
+        font-size: .875rem;
+        margin: 1%;
+    }
+
+    .form-group label, label{
+        font-size: .8125rem;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    .form-group input, input, .form-control, .input-group-text, .form-select{
+        font-size: .6875rem;
+        width: auto;
+        padding: 1px;
+        height: 100%;
+    }
+
+    .form-group select option {
+    font-size: .5625rem;
+    }
+
+        .form-group textarea {
+    display: flex;
+    resize: auto;
+    width:  550px;
+    height: 350px;
+    }
+
+        .form-group p {
+    font-size: .6875rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    }
+
+        /* Botones: Del Formulario de contactos Tablet */
+    .form-group .btn {
+        margin:0;
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        font-size: .75rem;
+    }
+
+    .form-group a{
+        font-size: .75rem;
+        /* No se como hacer para centra el texto - probe varias cosas y no me doy cuenta que aplicar */
+
+    }
+
+     /* Footer Tablet */
+    .homeFooter{
+        flex-direction: row;
+        
+    }
+
 }
