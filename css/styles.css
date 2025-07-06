@@ -291,10 +291,11 @@ article img {
     border: 1px solid rgba(214, 160, 90, 0.699);
     box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
     border-radius: 15%;
-    
-
+    transition: all 0.3s;
 }
-
+.containerPage  div img:hover{
+    transform: scale(1.2);
+}
 
 /************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
 .container .col-sm-9 .my-auto{
