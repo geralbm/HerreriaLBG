@@ -451,10 +451,11 @@ input,
 
 /******************* Media Query - Responsivo ********************/
 
-/* Media Query - Movile */
-/* Navbar Movile */
-@media (min-width: 375px) and (max-width: 768px) /* @media (max-width: 768px) */ {
-  /* NavBar Movile*/
+/************ Media Query - Mobile *****************/
+/* Navbar Mobile */
+@media (min-width: 375px) and (max-width: 768px) 
+{
+  /* NavBar Mobile*/
   .header {
     display: flex;
     flex-direction: column;
@@ -465,14 +466,14 @@ input,
     flex-direction: column;
   }
 
-  /* Logo Movile */
+  /* Logo Mobile */
   .navbar a img {
     display: flex;
     height: 40px;
     margin: 5px;
   }
 
-  /* Titulo Principal Movile */
+  /* Titulo Principal Mobile */
   h1 {
     display: flex;
     font-size: 0.9375rem;
@@ -503,6 +504,7 @@ input,
 
   h2 {
     font-size: 0.9375rem;
+    justify-content: start;
   }
 
   .descPage {
@@ -511,7 +513,7 @@ input,
     justify-content: left;
   }
 
-  /* Form Contacto Movile */
+  /* Form Contacto Mobile */
   .subtit {
     font-size: 0.6875rem;
   }
@@ -552,7 +554,7 @@ input,
     font-family: "Poppins", sans-serif;
   }
 
-  /* Botones: Del Formulario de contactos Movile */
+  /* Botones: Del Formulario de contactos Mobile */
   .form-group .btn {
     margin: 0;
     padding: 0;
@@ -564,7 +566,7 @@ input,
     font-size: 0.625rem;
   }
 
-  /* Footer Movile */
+  /* Footer Mobile */
   .homeFooter {
     display: flex;
     flex-direction: column;
@@ -583,7 +585,7 @@ input,
     align-items: start;
   }
 
-  /* Home Movile */
+  /* Home Mobile */
   main h3 {
     font-size: 15px;
   }
@@ -627,7 +629,7 @@ input,
     width: 40%;
     padding: 5%;
   }
-  /* Estilos de Pages Movile */
+  /* Estilos de Pages Mobile */
   .descPage {
     font-size: 0.625rem;
     text-align: left;
@@ -635,15 +637,17 @@ input,
 }
 
 /* Media Query - Tablet*/
-@media (min-width: 768px) and (max-width: 992px) {
-  /* Logo Movile */
+/* @media (min-width: 768px) and (max-width: 992px) */
+@media (max-width: 1024px) 
+{
+  /* Logo tablet*/
   .navbar a img {
     display: flex;
     height: 80px;
     margin: 7px;
   }
 
-  /* Titulo Principal Movile */
+  /* Titulo Principal tablet */
   h1 {
     display: flex;
     font-size: 1.25rem;
