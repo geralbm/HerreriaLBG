@@ -1,746 +1,779 @@
-
 /* Tipografia */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Seteo Genérico */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /******************** ESTILO NAVBAR ********************/
 .header {
-    display: flex;
-    border-top-left-radius:60px;
-    border-bottom-right-radius: 60px;
-    border: 1.5px solid rgba(145, 140, 140, 0.704);
-    background-color: rgba(0, 0, 0, 0.918);
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    padding: 5px;
-    
+  display: flex;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border: 1.5px solid rgba(145, 140, 140, 0.704);
+  background-color: rgba(0, 0, 0, 0.918);
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 5px;
 }
-
 
 /******************** ESTILO DEL LOGO ********************/
-.navbar a img{
-    height: 90px;
-    width: auto;
-    transition: all 0.3s;
-    border-radius: 30px;
-    border-radius: 50% 0% 50% 0%;
-    border: 2px solid;
-    border-color:rgba(128, 128, 128, 0.357);
-    float: left;
+.navbar a img {
+  height: 90px;
+  width: auto;
+  transition: all 0.3s;
+  border-radius: 30px;
+  border-radius: 50% 0% 50% 0%;
+  border: 2px solid;
+  border-color: rgba(128, 128, 128, 0.357);
+  float: left;
 }
 .navbar a img:hover {
-    transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 /************** ESTILO DEL TITULO PRINCIPAL ************/
 h1 {
-    display:flex;
-    font-weight: 70rem;
-    font-style:bold;
-    color: #eee6e690;
-    font-weight: bolder;
-    letter-spacing: 5px;
-    justify-content: left;
-    padding:0;
-    margin:0;
+  display: flex;
+  font-weight: 70rem;
+  font-style: bold;
+  color: #eee6e690;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
 }
 /******** Estilos de Titulos de Sub - Páginas ********/
-h2{
-    display: flex;
-    font-style:bold;
-    color: rgb(195, 123, 28);
-    font-weight: bolder;
-    letter-spacing: 5px;
-    text-align: justify;
-    margin:5px;
+h2 {
+  display: flex;
+  font-style: bold;
+  color: rgb(195, 123, 28);
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-align: justify;
+  margin: 5px;
 }
 /**************** Estilo de Menu & sub menu *************/
 
-.navbar .menu  {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float:right;
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
 }
-.navbar .menu li{
-    display: flex;
-    letter-spacing: 2px;
-    align-items: center;
+.navbar .menu li {
+  display: flex;
+  letter-spacing: 2px;
+  align-items: center;
 }
 
 .navbar .menu li:hover ul {
-    display: flex;
-    flex-direction: column;
-    font-size: .75rem;
-    letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
 }
-.navbar .menu li ul{
-    display: none; 
+.navbar .menu li ul {
+  display: none;
 }
-.navbar .menu a{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: rgb(195, 123, 28);
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    padding: 10px 20px; 
+.navbar .menu a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(195, 123, 28);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
 }
-.menu .sub_menu1 li a{
-    color: seashell;
+.menu .sub_menu1 li a {
+  color: seashell;
 }
-main{
-    min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+main {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 /******** Estilo de combo de Busqueda - Menu ********/
 
-.busqueda{
-    display: flex;
-    justify-content: center;
-    width: auto;
+.busqueda {
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
-.busqueda input{
-    display: flex;
-    justify-content: right;
-    align-items:left;
-    width: auto;
-    height: 15%;
-    font-size: 0.9rem;
-    margin: 1%;
-    padding: 1.5%;
-    border-radius: 10px;
-    border-color:rgba(214, 160, 90, 0.699);  
+.busqueda input {
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  width: auto;
+  height: 15%;
+  font-size: 0.9rem;
+  margin: 1%;
+  padding: 1.5%;
+  border-radius: 10px;
+  border-color: rgba(214, 160, 90, 0.699);
 }
-.btn_busqueda{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color:rgb(195, 123, 28);
-    border-color:rgba(214, 160, 90, 0.699);  
-    font-weight: bold;
-    width: alto;
-    height: 90%;
-    margin: 1%;   
-    padding: 1.5%;
-    border-radius: 3px;
+.btn_busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgb(195, 123, 28);
+  border-color: rgba(214, 160, 90, 0.699);
+  font-weight: bold;
+  width: alto;
+  height: 90%;
+  margin: 1%;
+  padding: 1.5%;
+  border-radius: 3px;
 }
 
 /**************** ESTILO HOME ******************/
 /* Estilos de la Presentacion - Home */
-.home_presentacion{
-    display: grid;
-    grid-gap:0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: 100%;
+.home_presentacion {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
 }
 
-h3{
-    font-size: 2.5rem;
-    padding: 10px;
-    font-weight: bold;
-    word-spacing: 8px;
-    letter-spacing: 3px;
-    text-align: center;
-    color: rgba(77, 93, 94, 0.582);
+h3 {
+  font-size: 2.5rem;
+  padding: 10px;
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgba(77, 93, 94, 0.582);
 }
 
-h2{
-    font-size: 1.375rem;
-    padding: 3%;
-    text-decoration: underline;
-    margin: 0;
-    justify-content: center;
+h2 {
+  font-size: 1.375rem;
+  padding: 3%;
+  text-decoration: underline;
+  margin: 0;
+  justify-content: center;
 }
-.text{
-    font-size: 15px;
-    padding: 15px;
-    text-align: center;
-    color: rgba(241, 242, 247, 0.938);  
-    line-height:82px;
-    font-weight: bold;
-    background-image: url("../assets/img/FondoPrincipal.JPG");
-    border-radius: 5%;
-    word-spacing: 8px;
-    letter-spacing: 3px;
+.text {
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  color: rgba(241, 242, 247, 0.938);
+  line-height: 82px;
+  font-weight: bold;
+  background-image: url("../assets/img/FondoPrincipal.JPG");
+  border-radius: 5%;
+  word-spacing: 8px;
+  letter-spacing: 3px;
 }
 
 /* Estilos de los servicios - Home */
 
-.home_servicios{
-    padding: 40px 0;
+.home_servicios {
+  padding: 40px 0;
 }
 .home_servicios article {
-    display: grid;
-    grid-template-columns:  repeat(auto-fill, minmax(380px, 1fr));
-    grid-gap: 20px;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
 }
 
-h4{
-    padding: 10%;
-    margin: 0%;
-    font-size: 1.25rem;
-    word-spacing: 8px;
-    letter-spacing: 3px;
-    font-weight: bolder;
+h4 {
+  padding: 10%;
+  margin: 0%;
+  font-size: 1.25rem;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-weight: bolder;
 }
-.estructurasMetalicas, p{
-    padding: 2%;
-    margin: 2%;
-    font-size: 20px;
-    word-spacing: 8px;
-    letter-spacing: 3px;
-    color: rgba(103, 110, 110, 0.404);
-    justify-content:center;
-    text-align: center;
+.estructurasMetalicas,
+p {
+  padding: 2%;
+  margin: 2%;
+  font-size: 20px;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  color: rgba(103, 110, 110, 0.404);
+  justify-content: center;
+  text-align: center;
 }
 
 article img {
-    height: 70%;
-    width: 70%;
-    padding: 0%;
-    margin: 10%;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
-    border-radius: 35%;
+  height: 70%;
+  width: 70%;
+  padding: 0%;
+  margin: 10%;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
+  border-radius: 35%;
+  transition: all 0.3s;
+}
+
+article img:hover {
+     transform: scale(1.1);
 }
 /************ ESTILO DE PAGES **********************/
 
-.containerPage{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-gap: 60px;
-    align-items: stretch;
-    padding: 30px;
-    font-family: "Poppins", sans-serif;
+.containerPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 60px;
+  align-items: stretch;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
 }
-.subPageTit{
-    padding: 8px;
-    margin: 5px;
-    font-family: "Poppins", sans-serif;
-}
-
-.descPage{
-    display:flex;
-    padding: 5px;
-    margin: 14px;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align:justify;
-    width: auto;
-    height: 50%;
-    justify-content:flex-end;
-}
-.subTitFoto{
-    font-size: 12px;
-    padding: 10px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
-}
-.descFoto{
-    font-size: 11px;
-    text-align:center;
-    padding: 0;
-    font-weight: bold;
-    line-height: 20px;
+.subPageTit {
+  padding: 8px;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
-.containerPage div{
-    padding: 10px;
-    box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);;
-    text-align: center;
+.descPage {
+  display: flex;
+  padding: 5px;
+  margin: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  width: auto;
+  height: 50%;
+  justify-content: flex-end;
 }
 
-.containerPage  div img{
-    max-width: 80%;
-    margin: 10;
-    border: 1px solid rgba(214, 160, 90, 0.699);
-    box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
-    border-radius: 15%;
-    transition: all 0.3s;
+.card{
+    display: flex;
+    border-radius: 8%;
 }
-.containerPage  div img:hover{
-    transform: scale(1.2);
+.subTitFoto {
+  font-size: 12px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.descFoto {
+  font-size: 11px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.containerPage card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+.containerPage div {
+  padding: 10px;
+  text-align: center;
+}
+
+.containerPage div img {
+  max-width: 60%;
+  margin: 10;
+  border: 1px solid rgba(158, 151, 147, 0.486);
+  box-shadow: 2px 2px 6px 0px rgba(216, 86, 26, 0.699);
+  border-radius: 15%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  
+}
+
+.containerPage div img:hover {
+  transform: rotateY(180deg);
 }
 
 /************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
-.container .col-sm-9 .my-auto{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    max-width: auto;
-    height: 100%;
-    font-family: "Poppins", sans-serif;  
+.container .col-sm-9 .my-auto {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  max-width: auto;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .subtit {
-    display: flex;
-    color: rgba(20, 18, 18, 0.609);
-    font-weight: bold;
-    word-spacing: 8px;
-    letter-spacing: 3px;
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
+  display: flex;
+  color: rgba(20, 18, 18, 0.609);
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 .form-control {
-    background-color: rgba(201, 190, 190, 0.544);
-    font-size: 0.8rem;
-    border-color:rgba(214, 160, 90, 0.699);  
-    width: auto;
-    height: 35px;
-    display: flex;
+  background-color: rgba(201, 190, 190, 0.544);
+  font-size: 0.8rem;
+  border-color: rgba(214, 160, 90, 0.699);
+  width: auto;
+  height: 35px;
+  display: flex;
 }
 
 span {
-    color: rgb(194, 47, 47);
-    font-size: .625rem;
+  color: rgb(194, 47, 47);
+  font-size: 0.625rem;
 }
 
-.form-group label, label {
-    color: rgba(0, 0, 0, 0.642);
-    font-weight: bold;
-    font-size: 0.8rem;
+.form-group label,
+label {
+  color: rgba(0, 0, 0, 0.642);
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .form-group select option {
-    font-size: .6875rem;
+  font-size: 0.6875rem;
 }
 
-.form-group input, input, .form-control, .input-group-text, .form-select {
-    font-size: 0.8rem;
-    color: rgba(84, 75, 71, 0.683);
+.form-group input,
+input,
+.form-control,
+.input-group-text,
+.form-select {
+  font-size: 0.8rem;
+  color: rgba(84, 75, 71, 0.683);
 }
 
 .form-group textarea {
-    display: flex;
-    resize: auto;
-    width:  592px;
-    height: 250px;
+  display: flex;
+  resize: auto;
+  width: 592px;
+  height: 250px;
 }
 
 .form-group p {
-    font-size: 0.7rem;
-    font-style: italic;
-    font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
 }
 
 /*********** Botones: Del Formulario de contactos **********/
 
 .form-group .btn {
-    color:rgb(195, 123, 28);
-    border-color: rgba(105, 91, 91, 0.74);
-    font-family: "Poppins", sans-serif;
+  color: rgb(195, 123, 28);
+  border-color: rgba(105, 91, 91, 0.74);
+  font-family: "Poppins", sans-serif;
 }
 
-.form-group a{
-    font-size: 85%;
+.form-group a {
+  font-size: 85%;
 }
 
-.form-group .btn:hover{
-    background-color:#000000;
-    color:rgb(230, 230, 223);
-    border-color: rgba(20, 18, 18, 0.609);
-    font-family: "Poppins", sans-serif;
+.form-group .btn:hover {
+  background-color: #000000;
+  color: rgb(230, 230, 223);
+  border-color: rgba(20, 18, 18, 0.609);
+  font-family: "Poppins", sans-serif;
 }
 
 /******************** ESTILO DEL FOOTER ********************/
 .homeFooter {
-    background-color:rgb(195, 123, 28); 
-    width: auto;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 0 15px 5px  rgba(36, 35, 35, 0.568);
-    border-radius: 0% 25% 0% 25%;
+  background-color: rgb(195, 123, 28);
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 15px 5px rgba(36, 35, 35, 0.568);
+  border-radius: 0% 25% 0% 25%;
 }
 
 .homeFooter div a {
-    display: flex;
-    margin: .625rem;
-    letter-spacing: .125rem;
-    font-size: .75rem;
-    color: #aa2626d2;
-    font-weight: bolder;
-    text-align: center;
-    padding: 5px;
-    text-decoration: underline;
+  display: flex;
+  margin: 0.625rem;
+  letter-spacing: 0.125rem;
+  font-size: 0.75rem;
+  color: #aa2626d2;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+  text-decoration: underline;
 }
 
 .homeFooter div ul {
-    margin: .625rem;
-    color: rgb(20, 20, 20);
-    font-weight: bolder;
-    letter-spacing: .1875rem;
-    font-size: 0.625rem;
-    padding: 5px;
-    font-style: italic;
-    list-style:none;
-    text-align: center;
+  margin: 0.625rem;
+  color: rgb(20, 20, 20);
+  font-weight: bolder;
+  letter-spacing: 0.1875rem;
+  font-size: 0.625rem;
+  padding: 5px;
+  font-style: italic;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
 }
-    .homeFooter .what .whatLink{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #25D366;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        padding: 2px 1px;
-        text-decoration: none;
-    }
 
-    .homeFooter .what .whatLink i {
-        width: 30%;
-        height: 30%;
-        font-size: 30px;
-        color: aliceblue;
-        display: flex;
-        justify-content:center;
-        align-items:center;
-        margin: 0;
-        
 
-    }
+.homeFooter .what .whatLink {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
 
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 2px 1px;
+  text-decoration: none;
+}
+
+.homeFooter .what .whatLink i {
+  width: 30%;
+  height: 30%;
+  font-size: 30px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 
 /******************* Media Query - Responsivo ********************/
 
 /* Media Query - Movile */
 /* Navbar Movile */
-@media (min-width: 375px) and (max-width: 768px){
-    /* NavBar Movile*/
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
+@media (min-width: 375px) and (max-width: 768px) /* @media (max-width: 768px) */ {
+  /* NavBar Movile*/
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-    /* Logo Movile */
-    .navbar a img{
-        display: flex;
-        height: 40px;
-        margin:5px;
-    }    
+  /* Logo Movile */
+  .navbar a img {
+    display: flex;
+    height: 40px;
+    margin: 5px;
+  }
 
-    /* Titulo Principal Movile */
-    h1{
-        display: flex;
-        font-size: .9375rem;
-        text-align: center;   
-        margin: 5px;
-    }
+  /* Titulo Principal Movile */
+  h1 {
+    display: flex;
+    font-size: 0.9375rem;
+    text-align: center;
+    margin: 5px;
+  }
 
-    .busqueda input, .btn_busqueda{
-        font-size: .625rem;
-        width: auto;
-        height: 15px;
-    }
+  .busqueda input,
+  .btn_busqueda {
+    font-size: 0.625rem;
+    width: auto;
+    height: 15px;
+  }
 
-        .busqueda{
-        height: 18px;
-    }
-    
-    .navbar .menu {
-        display:inline-block;
-        font-size: .875rem;
-        flex-direction: column;
-    }
-    
-    .menu .sub_menu1 li a{
-        font-size: .75rem;
-    }
+  .busqueda {
+    height: 18px;
+  }
 
-    h2{
-        font-size: .9375rem;
-    }
+  .navbar .menu {
+    display: inline-block;
+    font-size: 0.875rem;
+    flex-direction: column;
+  }
 
-    .descPage{
-        font-size: .625rem;
-        text-align:left;
-        justify-content: left;
-    }
+  .menu .sub_menu1 li a {
+    font-size: 0.75rem;
+  }
 
-    /* Form Contacto Movile */
-    .subtit{
-        font-size: .6875rem;
-    }
+  h2 {
+    font-size: 0.9375rem;
+  }
 
-    .form-group label, label{
-        font-size: .5625rem;
-    }
+  .descPage {
+    font-size: 0.625rem;
+    text-align: left;
+    justify-content: left;
+  }
 
-    span {
-        font-size: .5rem;
-    }
-    
-    .form-group input, input, .form-control, .input-group-text, .form-select{
-        font-size: .5625rem;
-        width: auto;
-        height: 18px;
-    }
+  /* Form Contacto Movile */
+  .subtit {
+    font-size: 0.6875rem;
+  }
 
-    .form-group select option {
-        font-size: .5625rem;
-    }
+  .form-group label,
+  label {
+    font-size: 0.5625rem;
+  }
 
-    .form-group textarea {
-        display: flex;
-        resize: auto;
-        width:  333px;
-        height: 281px;
-    }
+  span {
+    font-size: 0.5rem;
+  }
 
-    .form-group p {
-        font-size: .5625rem;
-        font-style: italic;
-        font-family: "Poppins", sans-serif;
-    }
+  .form-group input,
+  input,
+  .form-control,
+  .input-group-text,
+  .form-select {
+    font-size: 0.5625rem;
+    width: auto;
+    height: 18px;
+  }
 
-    /* Botones: Del Formulario de contactos Movile */
-    .form-group .btn {
-        margin:0;
-        padding: 0;
-        width: 80px;
-        height: 20px;
-    }
+  .form-group select option {
+    font-size: 0.5625rem;
+  }
 
-    .form-group a{
-        font-size: .625rem;
-    }
+  .form-group textarea {
+    display: flex;
+    resize: auto;
+    width: 333px;
+    height: 281px;
+  }
 
-    /* Footer Movile */
-    .homeFooter{
-        display: flex;
-        flex-direction: column;
-    }
+  .form-group p {
+    font-size: 0.5625rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+  }
 
-    .homeFooter div a {
-        display: flex;
-        align-items: center;
-        font-size: .625rem;
-    }
+  /* Botones: Del Formulario de contactos Movile */
+  .form-group .btn {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 20px;
+  }
 
-    .homeFooter div ul {
-        display: flex;
-        font-size: .5625rem;
-        flex-direction: column;
-        align-items: start;    
-    }
+  .form-group a {
+    font-size: 0.625rem;
+  }
 
-    /* Home Movile */
-    main h3{
-        font-size: 15px;
-    }
+  /* Footer Movile */
+  .homeFooter {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .home_presentacion{
-        height: 5%;
-        width: auto;
-        justify-items: center;
-    }
+  .homeFooter div a {
+    display: flex;
+    align-items: center;
+    font-size: 0.625rem;
+  }
 
-    .home_presentacion, .text{
-        font-size: 12px;
-        width: auto;
-        word-spacing: 3px;
-        letter-spacing: 0px;
-    }
+  .homeFooter div ul {
+    display: flex;
+    font-size: 0.5625rem;
+    flex-direction: column;
+    align-items: start;
+  }
 
-    .grid h2{
-        font-size: 12px;
-        padding: 0;
-    }
+  /* Home Movile */
+  main h3 {
+    font-size: 15px;
+  }
 
-    .home_servicios{
-        text-align: center;
-        
-    }
-    .home_servicios article h4{
-        padding: 0%;
-        margin: 0;
-        font-size: 11px;
-        text-align: center;
-    }
+  .home_presentacion {
+    height: 5%;
+    width: auto;
+    justify-items: center;
+  }
 
-    .estructurasMetalicas, p{
-        font-size: 10px;
-        font-weight: bolder;
-    }
+  .home_presentacion,
+  .text {
+    font-size: 12px;
+    width: auto;
+    word-spacing: 3px;
+    letter-spacing: 0px;
+  }
 
-    article img {
-        width: 40%;
-        padding: 5%;
-        
-    }
-    /* Estilos de Pages Movile */
-    .descPage{
-        font-size: .625rem;
-        text-align: left;
-    }
+  .grid h2 {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .home_servicios {
+    text-align: center;
+  }
+  .home_servicios article h4 {
+    padding: 0%;
+    margin: 0;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .estructurasMetalicas,
+  p {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  article img {
+    width: 40%;
+    padding: 5%;
+  }
+  /* Estilos de Pages Movile */
+  .descPage {
+    font-size: 0.625rem;
+    text-align: left;
+  }
 }
 
 /* Media Query - Tablet*/
-@media (min-width: 768px) and (max-width: 992px){
-    /* Logo Movile */
-    .navbar a img{
-        display: flex;
-        height: 80px;
-        margin:7px;
-    }
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Logo Movile */
+  .navbar a img {
+    display: flex;
+    height: 80px;
+    margin: 7px;
+  }
 
-    /* Titulo Principal Movile */
-    h1{
-        display: flex;
-        font-size: 1.25rem;   
-        margin: 7px;
-    }
+  /* Titulo Principal Movile */
+  h1 {
+    display: flex;
+    font-size: 1.25rem;
+    margin: 7px;
+  }
 
-    .busqueda input, .btn_busqueda{
-        font-size: .75rem;
-        width: auto;
-        height: 25px;
-    }
+  .busqueda input,
+  .btn_busqueda {
+    font-size: 0.75rem;
+    width: auto;
+    height: 25px;
+  }
 
-    .busqueda{
-        height: 60%;
-        width: auto;
-    }
+  .busqueda {
+    height: 60%;
+    width: auto;
+  }
 
-    .navbar .menu {
-        display:inline-block;
-        font-size: .875rem;
-        flex-direction: column;
-    }
-    
-    .menu .sub_menu1 li a{
-        font-size: .75rem;
-    }
+  .navbar .menu {
+    display: inline-block;
+    font-size: 0.875rem;
+    flex-direction: column;
+  }
 
-    h2{
-        font-size: 1.0625rem;
-        margin: 2px;
-        padding: 10px;
-    }
+  .menu .sub_menu1 li a {
+    font-size: 0.75rem;
+  }
 
-        /* Form Contacto Tablet */
-    .subtit{
-        font-size: .875rem;
-        margin: 1%;
-    }
+  h2 {
+    font-size: 1.0625rem;
+    margin: 2px;
+    padding: 10px;
+  }
 
-    .form-group label, label{
-        font-size: .8125rem;
-        margin: 5px;
-        padding: 10px;
-    }
+  /* Form Contacto Tablet */
+  .subtit {
+    font-size: 0.875rem;
+    margin: 1%;
+  }
 
-    span {
-        font-size: 10px;
-    }
+  .form-group label,
+  label {
+    font-size: 0.8125rem;
+    margin: 5px;
+    padding: 10px;
+  }
 
-    .form-group input, input, .form-control, .input-group-text, .form-select{
-        font-size: .6875rem;
-        width: auto;
-        padding: 1px;
-        height: 100%;
-    }
+  span {
+    font-size: 10px;
+  }
 
-    .form-group select option {
-    font-size: .5625rem;
-    }
+  .form-group input,
+  input,
+  .form-control,
+  .input-group-text,
+  .form-select {
+    font-size: 0.6875rem;
+    width: auto;
+    padding: 1px;
+    height: 100%;
+  }
 
-    .form-group textarea {
-        display: flex;
-        resize: auto;
-        width:  550px;
-        height: 350px;
-    }
+  .form-group select option {
+    font-size: 0.5625rem;
+  }
 
-    .form-group p {
-        font-size: .6875rem;
-        font-style: italic;
-        font-family: "Poppins", sans-serif;
-    }
+  .form-group textarea {
+    display: flex;
+    resize: auto;
+    width: 550px;
+    height: 350px;
+  }
 
-        /* Botones: Del Formulario de contactos Tablet */
-    .form-group .btn {
-        margin:0;
-        padding: 0;
-        width: 100px;
-        height: 30px;
-        font-size: .75rem;
-    }
+  .form-group p {
+    font-size: 0.6875rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+  }
 
-    .form-group a{
-        font-size: .75rem;
-        /* No se como hacer para centra el texto - probe varias cosas y no me doy cuenta que aplicar */
+  /* Botones: Del Formulario de contactos Tablet */
+  .form-group .btn {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
 
-    }
+  .form-group a {
+    font-size: 0.75rem;
+    /* No se como hacer para centra el texto - probe varias cosas y no me doy cuenta que aplicar */
+  }
 
-     /* Footer Tablet */
-    .homeFooter{
-        flex-direction: row;
-    }
+  /* Footer Tablet */
+  .homeFooter {
+    flex-direction: row;
+  }
 
-    /* Hombe Tabler */
-    main h3{
-        font-size: 19px;
-    }
+  /* Hombe Tabler */
+  main h3 {
+    font-size: 19px;
+  }
 
-    .home_presentacion{
-        height: 2%;
-        width: auto;
-        justify-items: center;
-    }
+  .home_presentacion {
+    height: 2%;
+    width: auto;
+    justify-items: center;
+  }
 
-    .home_presentacion, .text{
-        font-size: 16px;
-    }
+  .home_presentacion,
+  .text {
+    font-size: 16px;
+  }
 
-    .grid h2{
-        font-size: 18px;
-    }
+  .grid h2 {
+    font-size: 18px;
+  }
 
-        .home_servicios article h4{
-        font-size: 16px;
-    }
-        .estructurasMetalicas, p{
-        font-size: 14px;
-        font-weight: bolder;
-        letter-spacing: 4px;
-    }
+  .home_servicios article h4 {
+    font-size: 16px;
+  }
+  .estructurasMetalicas,
+  p {
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+  }
 
-    article img {
-        width: 50%;
-        padding: 0;
-        
-    }
+  article img {
+    width: 50%;
+    padding: 0;
+  }
 }
