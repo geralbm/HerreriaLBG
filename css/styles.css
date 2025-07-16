@@ -176,25 +176,9 @@ h2 {
   border-radius: 5%;
   word-spacing: 8px;
   letter-spacing: 3px;
+  background-image: url("../assets/img/FondoPrincipal.JPG");
 }
 
-.containerH{
-    background-image: url("../assets/img/FondoPrincipal.JPG");
-    position: relative;
-    height: 19rem;
-    width: auto;
-    padding: 0%;
-    border-radius: 2%;
-    
-}
-
-.opacidad{
-    position:absolute;
-    width: auto;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.075);
-    
-}
 /* Estilos de los servicios - Home */
 
 .home_servicios {
@@ -207,7 +191,7 @@ h2 {
   align-items: stretch;
 }
 
-h4 {
+.home_servicios article h4{
   padding: 10%;
   margin: 0%;
   font-size: 1.25rem;
@@ -215,8 +199,7 @@ h4 {
   letter-spacing: 3px;
   font-weight: bolder;
 }
-.estructurasMetalicas,
-p {
+article .text2 {
   padding: 2%;
   margin: 2%;
   font-size: 20px;
@@ -239,7 +222,7 @@ article img {
 }
 
 article img:hover {
-     transform: scale(1.1);
+    transform: scale(1.1);
 }
 /************ ESTILO DE PAGES **********************/
 
@@ -292,6 +275,7 @@ article img:hover {
   width: 200px;
   height: 300px;
   perspective: 1000px;
+  position: relative;
 }
 .containerPage div {
   padding: 10px;
@@ -300,12 +284,13 @@ article img:hover {
 
 .containerPage div img {
   max-width: 60%;
-  margin: 10;
+  margin: 10%;
   border: 1px solid rgba(158, 151, 147, 0.486);
   box-shadow: 2px 2px 6px 0px rgba(216, 86, 26, 0.699);
   border-radius: 15%;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+  vertical-align: middle;
   
 }
 
@@ -469,7 +454,7 @@ input,
 
 /************ Media Query - Mobile *****************/
   
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 775px)  {
   /* NavBar Mobile*/
   .header {
     display: flex;
@@ -608,9 +593,8 @@ input,
 
   .home_presentacion {
     height: 5%;
-    width: auto;
-    justify-items: left;
-    justify-content: left;
+    justify-content:left;
+  
   }
 
   .home_presentacion,
@@ -621,11 +605,15 @@ input,
     letter-spacing: 0px;
   }
 
-  .grid h2 {
-    font-size: 10px;
+
+  h2 {
+    font-size: .625rem;
     padding: 0;
-    text-align: left;
-    margin:5%;
+    text-align:justify;
+    justify-content: left;
+    margin:1%;
+    padding: 2%;
+
   }
 
   .home_servicios {
@@ -633,30 +621,45 @@ input,
     justify-content: left;
     padding: 2%;
   }
+
+
   .home_servicios article h4 {
     padding: 0%;
-    margin: 1%;
+    margin: 3%;
     font-size: .5rem;
     text-align:justify;
     justify-content:left;
     width: auto;
     word-spacing: 0px;
-  }
-
-  .estructurasMetalicas,
-  p {
-    font-size: 8px;
-    font-weight: bolder;
-    text-align:justify;
-    width: auto;
     
   }
 
-  article img {
-    width: 40%;
-    padding: 5%;
-
+  article .text2 {
+    font-size: .5625rem;
+    font-weight: bolder;
+    text-align:left;
+    justify-content:center;
+    width: 80%;
+    margin:3%;
+    padding: 0%;
+    
   }
+
+
+  article div{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  /* article div img {
+    width: 60%;
+    height:100%;
+    padding: 1%;
+  
+  } */
   /* Estilos de Pages Mobile */
   .descPage {
     font-size: 0.625rem;
@@ -665,7 +668,7 @@ input,
 }
 
 /* Media Query - Tablet y mas capacidad*/
-@media (min-width: 768px) and (max-width: 1024px)
+@media (min-width: 769px) and (max-width: 1024px)
 /* @media screen and (min-width: 769px)  */
 {
   /* Logo tablet*/
