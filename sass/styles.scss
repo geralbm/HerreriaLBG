@@ -1,6 +1,6 @@
-@charset "UTF-8";
 /* Tipografia */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Seteo Genérico */
 * {
   box-sizing: border-box;
@@ -33,7 +33,6 @@
   border-color: rgba(128, 128, 128, 0.357);
   float: left;
 }
-
 .navbar a img:hover {
   transform: scale(1.2);
 }
@@ -43,14 +42,13 @@ h1 {
   display: flex;
   font-weight: 70rem;
   font-style: bold;
-  color: rgba(238, 230, 230, 0.5647058824);
+  color: #eee6e690;
   font-weight: bolder;
   letter-spacing: 5px;
   justify-content: left;
   padding: 0;
   margin: 0;
 }
-
 /******** Estilos de Titulos de Sub - Páginas ********/
 h2 {
   display: flex;
@@ -61,8 +59,8 @@ h2 {
   text-align: justify;
   margin: 5px;
 }
-
 /**************** Estilo de Menu & sub menu *************/
+
 .navbar .menu {
   display: flex;
   list-style: none;
@@ -70,7 +68,6 @@ h2 {
   margin: 0;
   float: right;
 }
-
 .navbar .menu li {
   display: flex;
   letter-spacing: 2px;
@@ -83,11 +80,9 @@ h2 {
   font-size: 0.75rem;
   letter-spacing: 2px;
 }
-
 .navbar .menu li ul {
   display: none;
 }
-
 .navbar .menu a {
   display: flex;
   justify-content: center;
@@ -97,23 +92,21 @@ h2 {
   font-weight: bold;
   padding: 10px 20px;
 }
-
 .menu .sub_menu1 li a {
   color: seashell;
 }
-
 main {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
 /******** Estilo de combo de Busqueda - Menu ********/
+
 .busqueda {
   display: flex;
   justify-content: center;
   width: auto;
 }
-
 .busqueda input {
   display: flex;
   justify-content: right;
@@ -126,7 +119,6 @@ main {
   border-radius: 10px;
   border-color: rgba(214, 160, 90, 0.699);
 }
-
 .btn_busqueda {
   display: flex;
   justify-content: center;
@@ -174,7 +166,6 @@ h2 {
   margin: 0;
   justify-content: center;
 }
-
 .text {
   font-size: 15px;
   padding: 15px;
@@ -189,19 +180,20 @@ h2 {
 }
 
 /* Estilos de los servicios - Home */
+
 .home_servicios {
   padding: 40px 0;
 }
-
 .home_servicios article {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
+
 }
 
-.home_servicios article h4 {
-  padding: 5%;
+.home_servicios article h4{
+  padding:5%;
   margin: 0%;
   font-size: 1.25rem;
   word-spacing: 8px;
@@ -211,11 +203,10 @@ h2 {
   justify-content: center;
 }
 
-.home_servicios article {
+.home_servicios article{
   display: flex;
   justify-content: center;
 }
-
 article .text2 {
   padding: 2%;
   margin: 2%;
@@ -226,6 +217,7 @@ article .text2 {
   display: flex;
   justify-content: center;
   text-align: center;
+
 }
 
 article img {
@@ -240,19 +232,18 @@ article img {
 }
 
 article img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
-
 /************ ESTILO DE PAGES **********************/
+
 .containerPage {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 60px;
-  align-items: stretch;
+  align-items: stretch; 
   padding: 30px;
   font-family: "Poppins", sans-serif;
 }
-
 .subPageTit {
   padding: 8px;
   margin: 5px;
@@ -272,11 +263,10 @@ article img:hover {
   letter-spacing: 5px;
 }
 
-.card {
-  display: flex;
-  border-radius: 8%;
+.card{
+    display: flex;
+    border-radius: 8%;
 }
-
 .subTitFoto {
   font-size: 12px;
   padding: 10px;
@@ -284,7 +274,6 @@ article img:hover {
   text-align: center;
   letter-spacing: 3px;
 }
-
 .descFoto {
   font-size: 11px;
   text-align: center;
@@ -301,7 +290,6 @@ article img:hover {
   perspective: 1000px;
   position: relative;
 }
-
 .containerPage div {
   padding: 10px;
   text-align: center;
@@ -316,6 +304,7 @@ article img:hover {
   transform-style: preserve-3d;
   transition: transform 0.3s;
   vertical-align: middle;
+  
 }
 
 .containerPage div img:hover {
@@ -391,6 +380,7 @@ input,
 }
 
 /*********** Botones: Del Formulario de contactos **********/
+
 .form-group .btn {
   color: rgb(195, 123, 28);
   border-color: rgba(105, 91, 91, 0.74);
@@ -424,7 +414,7 @@ input,
   margin: 0.625rem;
   letter-spacing: 0.125rem;
   font-size: 0.75rem;
-  color: rgba(170, 38, 38, 0.8235294118);
+  color: #aa2626d2;
   font-weight: bolder;
   text-align: center;
   padding: 5px;
@@ -444,11 +434,13 @@ input,
   justify-content: center;
 }
 
+
 .homeFooter .what .whatLink {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 60px;
+
   height: 60px;
   border-radius: 50%;
   background-color: #25d366;
@@ -472,63 +464,77 @@ input,
 }
 
 /******************* Media Query - Responsivo ********************/
+
 /************ Media Query - Mobile *****************/
-@media screen and (max-width: 480px) {
+  
+@media screen and (max-width: 480px)  {
   /* NavBar Mobile*/
   .header {
     display: flex;
     flex-direction: column;
   }
+
   nav {
     display: flex;
     flex-direction: column;
   }
+
   /* Logo Mobile */
   .navbar a img {
     display: flex;
     height: 40px;
     margin: 5px;
   }
+
   /* Titulo Principal Mobile */
   h1 {
     display: flex;
-    font-size: 0.75rem;
+    font-size: .75rem;
     text-align: center;
     margin: 5px;
   }
+
   .busqueda input,
   .btn_busqueda {
     font-size: 0.625rem;
     width: auto;
     height: 15px;
   }
+
   .busqueda {
     height: 18px;
   }
+
   .navbar .menu {
     display: inline-block;
-    font-size: 0.625rem;
+    font-size: .625rem;
     flex-direction: column;
   }
+
   .menu .sub_menu1 li a {
-    font-size: 0.5625rem;
+    font-size: .5625rem;
   }
+
   .descPage {
     font-size: 0.625rem;
     text-align: left;
     justify-content: left;
   }
+
   /* Form Contacto Mobile */
   .subtit {
     font-size: 0.6875rem;
   }
+
   .form-group label,
   label {
     font-size: 0.5625rem;
   }
+
   span {
     font-size: 0.5rem;
   }
+
   .form-group input,
   input,
   .form-control,
@@ -538,20 +544,24 @@ input,
     width: auto;
     height: 18px;
   }
+
   .form-group select option {
     font-size: 0.5625rem;
   }
+
   .form-group textarea {
     display: flex;
     resize: auto;
     width: 333px;
     height: 281px;
   }
+
   .form-group p {
     font-size: 0.5625rem;
     font-style: italic;
     font-family: "Poppins", sans-serif;
   }
+
   /* Botones: Del Formulario de contactos Mobile */
   .form-group .btn {
     margin: 0;
@@ -559,26 +569,31 @@ input,
     width: 80px;
     height: 20px;
   }
+
   .form-group a {
     font-size: 0.625rem;
   }
+
   /* Footer Mobile */
   .homeFooter {
     display: flex;
     flex-direction: column;
   }
+
   .homeFooter div a {
     display: flex;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: .5rem;
   }
+
   .homeFooter div ul {
     display: flex;
-    font-size: 0.4375rem;
+    font-size: .4375rem;
     flex-direction: column;
     text-align: justify;
   }
-  .homeFooter .what .whatLink {
+
+  .homeFooter .what .whatLink{
     height: 30px;
     width: 1.875rem;
   }
@@ -586,11 +601,15 @@ input,
   main h3 {
     font-size: 15px;
     text-align: center;
+    
   }
+
   .home_presentacion {
     height: 5%;
-    justify-content: left;
+    justify-content:left;
+  
   }
+
   .home_presentacion,
   .text {
     font-size: 12px;
@@ -598,44 +617,59 @@ input,
     word-spacing: 3px;
     letter-spacing: 0px;
   }
+
+
   h2 {
     font-size: 11px;
     padding: 0;
-    text-align: justify;
+    text-align:justify;
     justify-content: left;
-    margin: 1%;
+    margin:1%;
     padding: 2%;
+
   }
+
   .home_servicios {
     text-align: left;
     justify-content: left;
     padding: 2%;
   }
+
+
   .home_servicios article h4 {
     padding: 0%;
     margin: 3%;
     font-size: 10px;
-    text-align: justify;
-    justify-content: left;
+    text-align:justify;
+    justify-content:left;
     width: auto;
     word-spacing: 0px;
+    
   }
+
   article .text2 {
-    font-size: 0.5625rem;
+    font-size: .5625rem;
     font-weight: bolder;
-    text-align: left;
-    justify-content: center;
+    text-align:left;
+    justify-content:center;
     width: 80%;
-    margin: 3%;
+    margin:3%;
     padding: 0%;
+    
   }
-  article div {
+
+
+  article div{
     width: 80%;
     height: 90%;
     display: flex;
     justify-content: center;
+    
   }
-  article div img {
+
+
+  article div img{
+
     padding: 2%;
     margin: 12%;
   }
@@ -645,60 +679,74 @@ input,
     text-align: left;
   }
 }
+
 /* Media Query - Tablet*/
-@media (min-width: 481px) and (max-width: 775px) {
+@media (min-width: 481px) and (max-width: 775px)
+
+{
   /* Logo tablet*/
-  .navbar {
+  .navbar{
     justify-content: center;
   }
   .navbar a img {
     display: flex;
     height: 40px;
     margin: 7px;
+  
   }
+
   /* Titulo Principal tablet */
   h1 {
     display: flex;
     font-size: 15px;
     margin: 7px;
-    text-align: center;
+    text-align:center;
   }
+
   .busqueda input,
   .btn_busqueda {
-    font-size: 10px;
+    font-size:10px;
     width: auto;
     height: 20px;
   }
+
   .busqueda {
     flex-wrap: wrap;
   }
+
   .navbar .menu {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: .75rem;
     flex-direction: column;
   }
+
   .menu .sub_menu1 li a {
     font-size: 10px;
   }
+
   h2 {
     font-size: 1.0625rem;
     margin: 2px;
     padding: 10px;
   }
+
   /* Form Contacto Tablet */
   .subtit {
     font-size: 0.875rem;
     margin: 1%;
   }
+
   .form-group label,
   label {
     font-size: 0.8125rem;
     margin: 5px;
     padding: 10px;
   }
+
   span {
     font-size: 10px;
   }
+
   .form-group input,
   input,
   .form-control,
@@ -709,20 +757,24 @@ input,
     padding: 1px;
     height: 100%;
   }
+
   .form-group select option {
     font-size: 0.5625rem;
   }
+
   .form-group textarea {
     display: flex;
     resize: auto;
     width: 550px;
     height: 350px;
   }
+
   .form-group p {
     font-size: 0.6875rem;
     font-style: italic;
     font-family: "Poppins", sans-serif;
   }
+
   /* Botones: Del Formulario de contactos Tablet */
   .form-group .btn {
     margin: 0;
@@ -731,40 +783,49 @@ input,
     height: 30px;
     font-size: 0.75rem;
   }
+
   .form-group a {
     font-size: 0.75rem;
     /* No se como hacer para centra el texto - probe varias cosas y no me doy cuenta que aplicar */
   }
+
   /* Footer Tablet */
   .homeFooter {
     flex-direction: row;
   }
+
   /* Home Table */
   main h3 {
     font-size: 19px;
   }
+
   .home_presentacion {
     height: 2%;
     width: auto;
     justify-items: center;
   }
+
   .home_presentacion,
   .text {
-    font-size: 0.625rem;
+    font-size: .625rem;
   }
+
   .grid h2 {
-    font-size: 0.9375rem;
+    font-size: .9375rem;
   }
+
   .home_servicios article h4 {
-    font-size: 0.8125rem;
+    font-size: .8125rem;
     padding: 3%;
+    
   }
   article .text2 {
-    font-size: 0.6875rem;
+    font-size: .6875rem;
     font-weight: bolder;
     letter-spacing: 4px;
   }
-  article div {
+
+  article div{
     display: flex;
     justify-content: center;
   }
@@ -773,60 +834,73 @@ input,
     padding: 1%;
   }
 }
+
 /* Escrtiorio */
-@media (min-width: 776px) and (max-width: 1024px) {
+@media (min-width: 776px) and (max-width: 1024px){
+
   /* Logo escritorio*/
-  .navbar {
+  .navbar{
     justify-content: center;
   }
   .navbar a img {
     display: flex;
     height: 60px;
     margin: 7px;
+  
   }
+
   /* Titulo Principal escritorio */
   h1 {
     display: flex;
     font-size: 20px;
     margin: 7px;
-    text-align: center;
+    text-align:center;
   }
+
   .busqueda input,
   .btn_busqueda {
-    font-size: 15px;
+    font-size:15px;
     width: auto;
     height: 20px;
   }
+
   .busqueda {
     flex-wrap: wrap;
   }
+
   .navbar .menu {
     display: inline-block;
     font-size: 13px;
     flex-direction: column;
   }
+
   .menu .sub_menu1 li a {
     font-size: 9px;
   }
+
   h2 {
     font-size: 1.0625rem;
     margin: 2px;
     padding: 10px;
   }
+
   /* Form Contacto escritorio */
   .subtit {
     font-size: 0.875rem;
     margin: 1%;
   }
+
   .form-group label,
   label {
     font-size: 0.8125rem;
     margin: 5px;
     padding: 10px;
   }
+
   span {
     font-size: 10px;
   }
+
   .form-group input,
   input,
   .form-control,
@@ -837,20 +911,24 @@ input,
     padding: 1px;
     height: 100%;
   }
+
   .form-group select option {
     font-size: 0.5625rem;
   }
+
   .form-group textarea {
     display: flex;
     resize: auto;
     width: 550px;
     height: 350px;
   }
+
   .form-group p {
     font-size: 0.6875rem;
     font-style: italic;
     font-family: "Poppins", sans-serif;
   }
+
   /* Botones: Del Formulario de contactos escritorio */
   .form-group .btn {
     margin: 0;
@@ -859,46 +937,57 @@ input,
     height: 30px;
     font-size: 0.75rem;
   }
+
   .form-group a {
     font-size: 0.75rem;
   }
+
   /* Footer escritorio */
   .homeFooter {
     flex-direction: row;
   }
+
   /* Home escritorio */
   main h3 {
     font-size: 19px;
   }
+
   .home_presentacion {
     height: 2%;
     width: auto;
     justify-items: center;
   }
+
   .home_presentacion,
   .text {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
+
   .grid h2 {
-    font-size: 0.9375rem;
+    font-size: .9375rem;
   }
-  .home_servicios article {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    display: flex;
-    text-align: center;
-  }
+
+.home_servicios article{ 
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  display: flex;
+  text-align: center;
+}
+
   .home_servicios article h4 {
-    font-size: 0.8125rem;
+    font-size: .8125rem;
     padding: 3%;
+    
   }
   article .text2 {
-    font-size: 0.6875rem;
+    font-size: .6875rem;
     font-weight: bolder;
     letter-spacing: 4px;
     justify-content: center;
+    
   }
-  article div {
+
+  article div{
     display: flex;
     justify-content: center;
   }
@@ -906,6 +995,5 @@ input,
     width: 50%;
     padding: 1%;
   }
-}
 
-/*# sourceMappingURL=styles.css.map */
+}
