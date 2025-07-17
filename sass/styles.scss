@@ -1,7 +1,36 @@
 /* Tipografia */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* Seteo Genérico */
+  //Extend 
+  .flexB {
+    display: flex;
+    justify-content: content;
+    
+  }
+
+  .flex{
+    display: flex;
+    text-align: justify;
+  }
+
+  .imgLogo {
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 30px;
+    border-radius: 50% 0% 50% 0%;
+    border: 2px solid;
+    border-color: rgba(128, 128, 128, 0.357);
+    float: left;
+  }
+
+  //Variables
+  $colortextoP:rgba(128, 128, 128, 0.753);
+  $colorNegro:rgba(0, 0, 0, 0.918);
+
+
+
+  /* Seteo Genérico */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,13 +38,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 /******************** ESTILO NAVBAR ********************/
 .header {
   display: flex;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
   border: 1.5px solid rgba(145, 140, 140, 0.704);
-  background-color: rgba(0, 0, 0, 0.918);
+  background-color: $colorNegro;
   justify-content: space-between;
   align-items: center;
   height: auto;
@@ -24,14 +54,7 @@
 
 /******************** ESTILO DEL LOGO ********************/
 .navbar a img {
-  height: 90px;
-  width: auto;
-  transition: all 0.3s;
-  border-radius: 30px;
-  border-radius: 50% 0% 50% 0%;
-  border: 2px solid;
-  border-color: rgba(128, 128, 128, 0.357);
-  float: left;
+  @extend .imgLogo;
 }
 .navbar a img:hover {
   transform: scale(1.2);
@@ -39,24 +62,24 @@
 
 /************** ESTILO DEL TITULO PRINCIPAL ************/
 h1 {
-  display: flex;
+  @extend .flexB;
   font-weight: 70rem;
   font-style: bold;
-  color: #eee6e690;
+  color: rgba(238, 230, 230, 0.5647058824);
   font-weight: bolder;
   letter-spacing: 5px;
-  justify-content: left;
   padding: 0;
   margin: 0;
+  
 }
 /******** Estilos de Titulos de Sub - Páginas ********/
 h2 {
-  display: flex;
+
+  @extend .flex;
   font-style: bold;
   color: rgb(195, 123, 28);
   font-weight: bolder;
   letter-spacing: 5px;
-  text-align: justify;
   margin: 5px;
 }
 /**************** Estilo de Menu & sub menu *************/
@@ -280,7 +303,7 @@ article img:hover {
   padding: 0;
   font-weight: bold;
   line-height: 20px;
-  color: rgba(128, 128, 128, 0.753);
+  color: $colortextoP;
   letter-spacing: 2px;
 }
 
@@ -633,6 +656,7 @@ input,
     text-align: left;
     justify-content: left;
     padding: 2%;
+    
   }
 
 
@@ -968,10 +992,11 @@ input,
   }
 
 .home_servicios article{ 
+  
   display:grid;
   grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
   display: flex;
-  text-align: center;
+    text-align: center;
 }
 
   .home_servicios article h4 {
