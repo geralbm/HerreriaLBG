@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Tipografia */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .flexB, h1 {
   display: flex;
@@ -20,14 +19,6 @@
   border: 2px solid;
   border-color: rgba(128, 128, 128, 0.357);
   float: left;
-}
-
-/* Seteo Genérico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 /******************** ESTILO NAVBAR ********************/
@@ -148,184 +139,67 @@ main {
   border-radius: 3px;
 }
 
-/**************** ESTILO HOME ******************/
-/* Estilos de la Presentacion - Home */
-.home_presentacion {
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
+/******************** ESTILO DEL FOOTER ********************/
+.homeFooter {
+  background-color: rgb(195, 123, 28);
   width: auto;
-  height: 100%;
-}
-
-h3 {
-  font-size: 2.5rem;
-  padding: 10px;
-  font-weight: bold;
-  word-spacing: 8px;
-  letter-spacing: 3px;
-  text-align: center;
-  color: rgba(77, 93, 94, 0.582);
-}
-
-h2 {
-  font-size: 1.375rem;
-  padding: 3%;
-  text-decoration: underline;
-  margin: 0;
+  height: 100px;
+  display: flex;
   justify-content: center;
+  box-shadow: 0 0 15px 5px rgba(36, 35, 35, 0.568);
+  border-radius: 0% 25% 0% 25%;
 }
 
-.text {
-  font-size: 15px;
-  padding: 15px;
-  text-align: center;
-  color: rgba(241, 242, 247, 0.938);
-  line-height: 82px;
-  font-weight: bold;
-  border-radius: 5%;
-  word-spacing: 8px;
-  letter-spacing: 3px;
-  background-image: url("../assets/img/FondoPrincipal.JPG");
-}
-
-/* Estilos de los servicios - Home */
-.home_servicios {
-  padding: 40px 0;
-}
-
-.home_servicios article {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
-}
-
-.home_servicios article h4 {
-  padding: 5%;
-  margin: 0%;
-  font-size: 1.25rem;
-  word-spacing: 8px;
-  letter-spacing: 3px;
+.homeFooter div a {
+  display: flex;
+  margin: 0.625rem;
+  letter-spacing: 0.125rem;
+  font-size: 0.75rem;
+  color: rgba(170, 38, 38, 0.8235294118);
   font-weight: bolder;
-  display: flex;
-  justify-content: center;
-}
-
-.home_servicios article {
-  display: flex;
-  justify-content: center;
-}
-
-article .text2 {
-  padding: 2%;
-  margin: 2%;
-  font-size: 20px;
-  word-spacing: 8px;
-  letter-spacing: 3px;
-  color: rgba(103, 110, 110, 0.404);
-  display: flex;
-  justify-content: center;
   text-align: center;
-}
-
-article img {
-  height: 70%;
-  width: 70%;
-  padding: 0%;
-  margin: 10%;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
-  border-radius: 35%;
-  transition: all 0.3s;
-}
-
-article img:hover {
-  transform: scale(1.1);
-}
-
-/************ ESTILO DE PAGES **********************/
-.containerPage {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 60px;
-  align-items: stretch;
-  padding: 30px;
-  font-family: "Poppins", sans-serif;
-}
-
-.subPageTit {
-  padding: 8px;
-  margin: 5px;
-  font-family: "Poppins", sans-serif;
-}
-
-.descPage {
-  display: flex;
   padding: 5px;
-  margin: 14px;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: justify;
-  width: auto;
-  height: 50%;
-  justify-content: flex-end;
-  letter-spacing: 5px;
+  text-decoration: underline;
 }
 
-.card {
+.homeFooter div ul {
+  margin: 0.625rem;
+  color: rgb(20, 20, 20);
+  font-weight: bolder;
+  letter-spacing: 0.1875rem;
+  font-size: 0.625rem;
+  padding: 5px;
+  font-style: italic;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.homeFooter .what .whatLink {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
   display: flex;
-  border-radius: 8%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 2px 1px;
+  text-decoration: none;
 }
 
-.subTitFoto {
-  font-size: 12px;
-  padding: 10px;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 3px;
-}
-
-.descFoto {
-  font-size: 11px;
-  text-align: center;
-  padding: 0;
-  font-weight: bold;
-  line-height: 20px;
-  color: rgba(128, 128, 128, 0.753);
-  letter-spacing: 2px;
-}
-
-.containerPage card {
-  width: 200px;
-  height: 300px;
-  perspective: 1000px;
-  position: relative;
-}
-
-.containerPage div {
-  padding: 10px;
-  text-align: center;
-}
-
-.containerPage div img {
-  max-width: 60%;
-  margin: 10%;
-  border: 1px solid rgba(158, 151, 147, 0.486);
-  box-shadow: 2px 2px 6px 0px rgba(216, 86, 26, 0.699);
-  border-radius: 15%;
-  transform-style: preserve-3d;
-  transition: transform 0.3s;
-  vertical-align: middle;
-}
-
-.containerPage div img:hover {
-  transform: rotateY(180deg);
+.homeFooter .what .whatLink i {
+  width: 30%;
+  height: 30%;
+  font-size: 30px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 /************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
@@ -412,69 +286,6 @@ input,
   color: rgb(230, 230, 223);
   border-color: rgba(20, 18, 18, 0.609);
   font-family: "Poppins", sans-serif;
-}
-
-/******************** ESTILO DEL FOOTER ********************/
-.homeFooter {
-  background-color: rgb(195, 123, 28);
-  width: auto;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 0 15px 5px rgba(36, 35, 35, 0.568);
-  border-radius: 0% 25% 0% 25%;
-}
-
-.homeFooter div a {
-  display: flex;
-  margin: 0.625rem;
-  letter-spacing: 0.125rem;
-  font-size: 0.75rem;
-  color: rgba(170, 38, 38, 0.8235294118);
-  font-weight: bolder;
-  text-align: center;
-  padding: 5px;
-  text-decoration: underline;
-}
-
-.homeFooter div ul {
-  margin: 0.625rem;
-  color: rgb(20, 20, 20);
-  font-weight: bolder;
-  letter-spacing: 0.1875rem;
-  font-size: 0.625rem;
-  padding: 5px;
-  font-style: italic;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-}
-
-.homeFooter .what .whatLink {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #25d366;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 2px 1px;
-  text-decoration: none;
-}
-
-.homeFooter .what .whatLink i {
-  width: 30%;
-  height: 30%;
-  font-size: 30px;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
 }
 
 /******************* Media Query - Responsivo ********************/
@@ -912,6 +723,194 @@ input,
     width: 50%;
     padding: 1%;
   }
+}
+/* Tipografia */
+/* Seteo Genérico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/**************** ESTILO HOME ******************/
+/* Estilos de la Presentacion - Home */
+.home_presentacion {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding: 10px;
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: rgba(77, 93, 94, 0.582);
+}
+
+h2 {
+  font-size: 1.375rem;
+  padding: 3%;
+  text-decoration: underline;
+  margin: 0;
+  justify-content: center;
+}
+
+.text {
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  color: rgba(241, 242, 247, 0.938);
+  line-height: 82px;
+  font-weight: bold;
+  border-radius: 5%;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  background-image: url("../assets/img/FondoPrincipal.JPG");
+}
+
+/* Estilos de los servicios - Home */
+.home_servicios {
+  padding: 40px 0;
+}
+
+.home_servicios article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.home_servicios article h4 {
+  padding: 5%;
+  margin: 0%;
+  font-size: 1.25rem;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.home_servicios article {
+  display: flex;
+  justify-content: center;
+}
+
+article .text2 {
+  padding: 2%;
+  margin: 2%;
+  font-size: 20px;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  color: rgba(103, 110, 110, 0.404);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+article img {
+  height: 70%;
+  width: 70%;
+  padding: 0%;
+  margin: 10%;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
+  border-radius: 35%;
+  transition: all 0.3s;
+}
+
+article img:hover {
+  transform: scale(1.1);
+}
+
+/************ ESTILO DE PAGES **********************/
+.containerPage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 60px;
+  align-items: stretch;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.subPageTit {
+  padding: 8px;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.descPage {
+  display: flex;
+  padding: 5px;
+  margin: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  width: auto;
+  height: 50%;
+  justify-content: flex-end;
+  letter-spacing: 5px;
+}
+
+.card {
+  display: flex;
+  border-radius: 8%;
+}
+
+.subTitFoto {
+  font-size: 12px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.descFoto {
+  font-size: 11px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  line-height: 20px;
+  color: rgba(128, 128, 128, 0.753);
+  letter-spacing: 2px;
+}
+
+.containerPage card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+}
+
+.containerPage div {
+  padding: 10px;
+  text-align: center;
+}
+
+.containerPage div img {
+  max-width: 60%;
+  margin: 10%;
+  border: 1px solid rgba(158, 151, 147, 0.486);
+  box-shadow: 2px 2px 6px 0px rgba(216, 86, 26, 0.699);
+  border-radius: 15%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  vertical-align: middle;
+}
+
+.containerPage div img:hover {
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

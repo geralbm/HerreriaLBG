@@ -1,0 +1,22 @@
+//Extend 
+  .flexB {
+    display: flex;
+    justify-content: content;
+    
+  }
+
+  .flex{
+    display: flex;
+    text-align: justify;
+  }
+
+  .imgLogo {
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 30px;
+    border-radius: 50% 0% 50% 0%;
+    border: 2px solid;
+    border-color: rgba(128, 128, 128, 0.357);
+    float: left;
+  }
