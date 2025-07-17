@@ -189,15 +189,23 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
+
 }
 
 .home_servicios article h4{
-  padding: 10%;
+  padding:5%;
   margin: 0%;
   font-size: 1.25rem;
   word-spacing: 8px;
   letter-spacing: 3px;
   font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.home_servicios article{
+  display: flex;
+  justify-content: center;
 }
 article .text2 {
   padding: 2%;
@@ -206,8 +214,10 @@ article .text2 {
   word-spacing: 8px;
   letter-spacing: 3px;
   color: rgba(103, 110, 110, 0.404);
+  display: flex;
   justify-content: center;
   text-align: center;
+
 }
 
 article img {
@@ -230,7 +240,7 @@ article img:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 60px;
-  align-items: stretch;
+  align-items: stretch; 
   padding: 30px;
   font-family: "Poppins", sans-serif;
 }
@@ -250,6 +260,7 @@ article img:hover {
   width: auto;
   height: 50%;
   justify-content: flex-end;
+  letter-spacing: 5px;
 }
 
 .card{
@@ -269,6 +280,8 @@ article img:hover {
   padding: 0;
   font-weight: bold;
   line-height: 20px;
+  color: rgba(128, 128, 128, 0.753);
+  letter-spacing: 2px;
 }
 
 .containerPage card {
@@ -289,7 +302,7 @@ article img:hover {
   box-shadow: 2px 2px 6px 0px rgba(216, 86, 26, 0.699);
   border-radius: 15%;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
   vertical-align: middle;
   
 }
@@ -454,7 +467,7 @@ input,
 
 /************ Media Query - Mobile *****************/
   
-@media screen and (max-width: 775px)  {
+@media screen and (max-width: 480px)  {
   /* NavBar Mobile*/
   .header {
     display: flex;
@@ -607,7 +620,7 @@ input,
 
 
   h2 {
-    font-size: .625rem;
+    font-size: 11px;
     padding: 0;
     text-align:justify;
     justify-content: left;
@@ -626,7 +639,7 @@ input,
   .home_servicios article h4 {
     padding: 0%;
     margin: 3%;
-    font-size: .5rem;
+    font-size: 10px;
     text-align:justify;
     justify-content:left;
     width: auto;
@@ -647,19 +660,19 @@ input,
 
 
   article div{
-    width: auto;
-    height: 100%;
+    width: 80%;
+    height: 90%;
     display: flex;
     justify-content: center;
     
   }
 
-  /* article div img {
-    width: 60%;
-    height:100%;
-    padding: 1%;
-  
-  } */
+
+  article div img{
+
+    padding: 2%;
+    margin: 12%;
+  }
   /* Estilos de Pages Mobile */
   .descPage {
     font-size: 0.625rem;
@@ -667,46 +680,48 @@ input,
   }
 }
 
-/* Media Query - Tablet y mas capacidad*/
-@media (min-width: 769px) and (max-width: 1024px)
-/* @media screen and (min-width: 769px)  */
+/* Media Query - Tablet*/
+@media (min-width: 481px) and (max-width: 775px)
+
 {
   /* Logo tablet*/
+  .navbar{
+    justify-content: center;
+  }
   .navbar a img {
     display: flex;
-    height: 80px;
+    height: 40px;
     margin: 7px;
+  
   }
 
   /* Titulo Principal tablet */
   h1 {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 15px;
     margin: 7px;
-    text-align:left;
+    text-align:center;
   }
 
   .busqueda input,
   .btn_busqueda {
-    font-size: 0.75rem;
+    font-size:10px;
     width: auto;
-    height: 25px;
+    height: 20px;
   }
 
   .busqueda {
-    /* height: 60%;
-    width: auto; */
     flex-wrap: wrap;
   }
 
   .navbar .menu {
     display: inline-block;
-    font-size: 0.875rem;
+    font-size: .75rem;
     flex-direction: column;
   }
 
   .menu .sub_menu1 li a {
-    font-size: 0.75rem;
+    font-size: 10px;
   }
 
   h2 {
@@ -792,25 +807,193 @@ input,
 
   .home_presentacion,
   .text {
-    font-size: 16px;
+    font-size: .625rem;
   }
 
   .grid h2 {
-    font-size: 18px;
+    font-size: .9375rem;
   }
 
   .home_servicios article h4 {
-    font-size: 16px;
+    font-size: .8125rem;
+    padding: 3%;
+    
   }
-  .estructurasMetalicas,
-  p {
-    font-size: 14px;
+  article .text2 {
+    font-size: .6875rem;
     font-weight: bolder;
     letter-spacing: 4px;
   }
 
+  article div{
+    display: flex;
+    justify-content: center;
+  }
+  article img {
+    width: 40%;
+    padding: 1%;
+  }
+}
+
+/* Escrtiorio */
+@media (min-width: 776px) and (max-width: 1024px){
+
+  /* Logo escritorio*/
+  .navbar{
+    justify-content: center;
+  }
+  .navbar a img {
+    display: flex;
+    height: 60px;
+    margin: 7px;
+  
+  }
+
+  /* Titulo Principal escritorio */
+  h1 {
+    display: flex;
+    font-size: 20px;
+    margin: 7px;
+    text-align:center;
+  }
+
+  .busqueda input,
+  .btn_busqueda {
+    font-size:15px;
+    width: auto;
+    height: 20px;
+  }
+
+  .busqueda {
+    flex-wrap: wrap;
+  }
+
+  .navbar .menu {
+    display: inline-block;
+    font-size: 13px;
+    flex-direction: column;
+  }
+
+  .menu .sub_menu1 li a {
+    font-size: 9px;
+  }
+
+  h2 {
+    font-size: 1.0625rem;
+    margin: 2px;
+    padding: 10px;
+  }
+
+  /* Form Contacto escritorio */
+  .subtit {
+    font-size: 0.875rem;
+    margin: 1%;
+  }
+
+  .form-group label,
+  label {
+    font-size: 0.8125rem;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  span {
+    font-size: 10px;
+  }
+
+  .form-group input,
+  input,
+  .form-control,
+  .input-group-text,
+  .form-select {
+    font-size: 0.6875rem;
+    width: auto;
+    padding: 1px;
+    height: 100%;
+  }
+
+  .form-group select option {
+    font-size: 0.5625rem;
+  }
+
+  .form-group textarea {
+    display: flex;
+    resize: auto;
+    width: 550px;
+    height: 350px;
+  }
+
+  .form-group p {
+    font-size: 0.6875rem;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Botones: Del Formulario de contactos escritorio */
+  .form-group .btn {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .form-group a {
+    font-size: 0.75rem;
+  }
+
+  /* Footer escritorio */
+  .homeFooter {
+    flex-direction: row;
+  }
+
+  /* Home escritorio */
+  main h3 {
+    font-size: 19px;
+  }
+
+  .home_presentacion {
+    height: 2%;
+    width: auto;
+    justify-items: center;
+  }
+
+  .home_presentacion,
+  .text {
+    font-size: .75rem;
+  }
+
+  .grid h2 {
+    font-size: .9375rem;
+  }
+
+.home_servicios article{ 
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  display: flex;
+  text-align: center;
+}
+
+  .home_servicios article h4 {
+    font-size: .8125rem;
+    padding: 3%;
+    
+  }
+  article .text2 {
+    font-size: .6875rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    justify-content: center;
+    
+  }
+
+  article div{
+    display: flex;
+    justify-content: center;
+  }
   article img {
     width: 50%;
-    padding: 0;
+    padding: 1%;
   }
+
 }
