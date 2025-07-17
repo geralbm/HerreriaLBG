@@ -290,7 +290,7 @@ input,
 
 /******************* Media Query - Responsivo ********************/
 /************ Media Query - Mobile *****************/
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   /* NavBar Mobile*/
   .header {
     display: flex;
@@ -315,12 +315,12 @@ input,
   }
   .busqueda input,
   .btn_busqueda {
-    font-size: 0.625rem;
+    font-size: 5px;
     width: auto;
     height: 15px;
   }
   .busqueda {
-    height: 18px;
+    height: 0.9375rem;
   }
   .navbar .menu {
     display: inline-block;
@@ -786,8 +786,8 @@ h2 {
 
 .home_servicios article {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   align-items: stretch;
 }
 

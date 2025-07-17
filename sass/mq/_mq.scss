@@ -2,7 +2,7 @@
 
 /************ Media Query - Mobile *****************/
   
-@media only screen and (max-width: 480px)  {
+@media screen and (max-width: 480px)  {
   /* NavBar Mobile*/
   .header {
     display: flex;
@@ -31,13 +31,14 @@
 
   .busqueda input,
   .btn_busqueda {
-    font-size: 0.625rem;
+    font-size: 5px;
     width: auto;
     height: 15px;
   }
 
+
   .busqueda {
-    height: 18px;
+    height: .9375rem;
   }
 
   .navbar .menu {

@@ -1,5 +1,6 @@
 @import "./utilities/variables";
 @import "./utilities/extend";
+@import "./utilities/mixins";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/formContactos";
@@ -19,13 +20,10 @@
 }
 
 
-
-
 /**************** ESTILO HOME ******************/
 /* Estilos de la Presentacion - Home */
 .home_presentacion {
-  display: grid;
-  grid-gap: 0;
+  @include grids(grid,0);
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   background-size: cover;
@@ -72,9 +70,8 @@ h2 {
   padding: 40px 0;
 }
 .home_servicios article {
-  display: grid;
+  @include grids(grid,20px);
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-gap: 20px;
   align-items: stretch;
 
 }
@@ -192,6 +189,7 @@ article img:hover {
   transition: transform 0.3s;
   vertical-align: middle;
   
+
 }
 
 .containerPage div img:hover {

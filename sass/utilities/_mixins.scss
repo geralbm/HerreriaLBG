@@ -1,0 +1,5 @@
+@mixin grids($valor1,$valor2){
+    display: $valor1;
+    grid-gap: $valor2;
+
+}
