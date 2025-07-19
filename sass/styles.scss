@@ -46,7 +46,7 @@ h3 {
 
 h2 {
   font-size: 1.375rem;
-  padding: 3%;
+  padding: 5px;
   text-decoration: underline;
   margin: 0;
   justify-content: center;
@@ -77,8 +77,8 @@ h2 {
 }
 
 .home_servicios article h4{
-  padding:5%;
-  margin: 0%;
+  padding:14px;
+  margin: 0;
   font-size: 1.25rem;
   word-spacing: 8px;
   letter-spacing: 3px;
@@ -92,8 +92,8 @@ h2 {
   justify-content: center;
 }
 article .text2 {
-  padding: 2%;
-  margin: 2%;
+  padding: 5px;
+  margin: 5px;
   font-size: 20px;
   word-spacing: 8px;
   letter-spacing: 3px;
@@ -107,8 +107,8 @@ article .text2 {
 article img {
   height: 70%;
   width: 70%;
-  padding: 0%;
-  margin: 10%;
+  padding: 0;
+  margin: 20px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(214, 160, 90, 0.699);
   border-radius: 35%;
@@ -359,22 +359,22 @@ article img:hover {
     padding: 0;
     text-align:justify;
     justify-content: left;
-    margin:1%;
-    padding: 2%;
+    margin:5px;
+    padding: 5px;
 
   }
 
   .home_servicios {
     text-align: left;
     justify-content: left;
-    padding: 2%;
+    padding: 5px;
     
   }
 
 
   .home_servicios article h4 {
-    padding: 0%;
-    margin: 3%;
+    padding: 0;
+    margin: 8px;
     font-size: 10px;
     text-align:justify;
     justify-content:left;
@@ -389,8 +389,8 @@ article img:hover {
     text-align:left;
     justify-content:center;
     width: 80%;
-    margin:3%;
-    padding: 0%;
+    margin:8px;
+    padding: 0;
     
   }
 
@@ -406,8 +406,8 @@ article img:hover {
 
   article div img{
 
-    padding: 2%;
-    margin: 12%;
+    padding: 5px;
+    margin: 20px;
   }
   /* Estilos de Pages Mobile */
   .descPage {
@@ -469,7 +469,7 @@ article img:hover {
   /* Form Contacto Tablet */
   .subtit {
     font-size: 0.875rem;
-    margin: 1%;
+    margin: 5px;
   }
 
   .form-group label,
@@ -552,7 +552,7 @@ article img:hover {
 
   .home_servicios article h4 {
     font-size: .8125rem;
-    padding: 3%;
+    padding: 10px;
     
   }
   article .text2 {
@@ -567,7 +567,7 @@ article img:hover {
   }
   article img {
     width: 40%;
-    padding: 1%;
+    padding: 3px;
   }
 }
 
@@ -623,7 +623,7 @@ article img:hover {
   /* Form Contacto escritorio */
   .subtit {
     font-size: 0.875rem;
-    margin: 1%;
+    margin: 5px;
   }
 
   .form-group label,
@@ -713,7 +713,7 @@ article img:hover {
 
   .home_servicios article h4 {
     font-size: .8125rem;
-    padding: 3%;
+    padding: 7px;
     
   }
   article .text2 {
@@ -730,7 +730,7 @@ article img:hover {
   }
   article img {
     width: 50%;
-    padding: 1%;
+    padding: 2px;  
   }
 
 }
