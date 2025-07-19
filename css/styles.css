@@ -21,273 +21,6 @@
   float: left;
 }
 
-/******************** ESTILO NAVBAR ********************/
-.header {
-  display: flex;
-  border-top-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  border: 1.5px solid rgba(145, 140, 140, 0.704);
-  background-color: rgba(0, 0, 0, 0.918);
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  padding: 5px;
-}
-
-/******************** ESTILO DEL LOGO ********************/
-.navbar a img:hover {
-  transform: scale(1.2);
-}
-
-/************** ESTILO DEL TITULO PRINCIPAL ************/
-h1 {
-  font-weight: 70rem;
-  font-style: bold;
-  color: rgba(238, 230, 230, 0.5647058824);
-  font-weight: bolder;
-  letter-spacing: 5px;
-  padding: 0;
-  margin: 0;
-}
-
-/******** Estilos de Titulos de Sub - Páginas ********/
-h2 {
-  font-style: bold;
-  color: rgb(195, 123, 28);
-  font-weight: bolder;
-  letter-spacing: 5px;
-  margin: 5px;
-}
-
-/**************** Estilo de Menu & sub menu *************/
-.navbar .menu {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
-}
-
-.navbar .menu li {
-  display: flex;
-  letter-spacing: 2px;
-  align-items: center;
-}
-
-.navbar .menu li:hover ul {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-}
-
-.navbar .menu li ul {
-  display: none;
-}
-
-.navbar .menu a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: rgb(195, 123, 28);
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-.menu .sub_menu1 li a {
-  color: seashell;
-}
-
-main {
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-}
-
-/******** Estilo de combo de Busqueda - Menu ********/
-.busqueda {
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-
-.busqueda input {
-  display: flex;
-  justify-content: right;
-  align-items: left;
-  width: auto;
-  height: 15%;
-  font-size: 0.9rem;
-  margin: 1%;
-  padding: 1.5%;
-  border-radius: 10px;
-  border-color: rgba(214, 160, 90, 0.699);
-}
-
-.btn_busqueda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-  color: rgb(195, 123, 28);
-  border-color: rgba(214, 160, 90, 0.699);
-  font-weight: bold;
-  width: alto;
-  height: 90%;
-  margin: 1%;
-  padding: 1.5%;
-  border-radius: 3px;
-}
-
-/******************** ESTILO DEL FOOTER ********************/
-.homeFooter {
-  background-color: rgb(195, 123, 28);
-  width: auto;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 0 15px 5px rgba(36, 35, 35, 0.568);
-  border-radius: 0% 25% 0% 25%;
-}
-
-.homeFooter div a {
-  display: flex;
-  margin: 0.625rem;
-  letter-spacing: 0.125rem;
-  font-size: 0.75rem;
-  color: rgba(170, 38, 38, 0.8235294118);
-  font-weight: bolder;
-  text-align: center;
-  padding: 5px;
-  text-decoration: underline;
-}
-
-.homeFooter div ul {
-  margin: 0.625rem;
-  color: rgb(20, 20, 20);
-  font-weight: bolder;
-  letter-spacing: 0.1875rem;
-  font-size: 0.625rem;
-  padding: 5px;
-  font-style: italic;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-}
-
-.homeFooter .what .whatLink {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #25d366;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 2px 1px;
-  text-decoration: none;
-}
-
-.homeFooter .what .whatLink i {
-  width: 30%;
-  height: 30%;
-  font-size: 30px;
-  color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-/************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
-.container .col-sm-9 .my-auto {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  max-width: auto;
-  height: 100%;
-  font-family: "Poppins", sans-serif;
-}
-
-.subtit {
-  display: flex;
-  color: rgba(20, 18, 18, 0.609);
-  font-weight: bold;
-  word-spacing: 8px;
-  letter-spacing: 3px;
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-
-.form-control {
-  background-color: rgba(201, 190, 190, 0.544);
-  font-size: 0.8rem;
-  border-color: rgba(214, 160, 90, 0.699);
-  width: auto;
-  height: 35px;
-  display: flex;
-}
-
-span {
-  color: rgb(194, 47, 47);
-  font-size: 0.625rem;
-}
-
-.form-group label,
-label {
-  color: rgba(0, 0, 0, 0.642);
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-.form-group select option {
-  font-size: 0.6875rem;
-}
-
-.form-group input,
-input,
-.form-control,
-.input-group-text,
-.form-select {
-  font-size: 0.8rem;
-  color: rgba(84, 75, 71, 0.683);
-}
-
-.form-group textarea {
-  display: flex;
-  resize: auto;
-  width: 592px;
-  height: 250px;
-}
-
-.form-group p {
-  font-size: 0.7rem;
-  font-style: italic;
-  font-family: "Poppins", sans-serif;
-}
-
-/*********** Botones: Del Formulario de contactos **********/
-.form-group .btn {
-  color: rgb(195, 123, 28);
-  border-color: rgba(105, 91, 91, 0.74);
-  font-family: "Poppins", sans-serif;
-}
-
-.form-group a {
-  font-size: 85%;
-}
-
-.form-group .btn:hover {
-  background-color: #000000;
-  color: rgb(230, 230, 223);
-  border-color: rgba(20, 18, 18, 0.609);
-  font-family: "Poppins", sans-serif;
-}
-
 /******************* Media Query - Responsivo ********************/
 /************ Media Query - Mobile *****************/
 @media screen and (max-width: 480px) {
@@ -416,7 +149,8 @@ input,
     letter-spacing: 0px;
   }
   h2 {
-    font-size: 11px;
+    display: flex;
+    font-size: 0.5rem;
     padding: 0;
     text-align: justify;
     justify-content: left;
@@ -724,6 +458,273 @@ input,
     padding: 1%;
   }
 }
+/******************** ESTILO NAVBAR ********************/
+.header {
+  display: flex;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border: 1.5px solid rgba(145, 140, 140, 0.704);
+  background-color: rgba(0, 0, 0, 0.918);
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 5px;
+}
+
+/******************** ESTILO DEL LOGO ********************/
+.navbar a img:hover {
+  transform: scale(1.2);
+}
+
+/************** ESTILO DEL TITULO PRINCIPAL ************/
+h1 {
+  font-weight: 70rem;
+  font-style: bold;
+  color: rgba(238, 230, 230, 0.5647058824);
+  font-weight: bolder;
+  letter-spacing: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+/******** Estilos de Titulos de Sub - Páginas ********/
+h2 {
+  font-style: bold;
+  color: rgb(195, 123, 28);
+  font-weight: bolder;
+  letter-spacing: 5px;
+  margin: 5px;
+}
+
+/**************** Estilo de Menu & sub menu *************/
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.navbar .menu li {
+  display: flex;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.navbar .menu li:hover ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.navbar .menu li ul {
+  display: none;
+}
+
+.navbar .menu a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(195, 123, 28);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.menu .sub_menu1 li a {
+  color: seashell;
+}
+
+main {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/******** Estilo de combo de Busqueda - Menu ********/
+.busqueda {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+.busqueda input {
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  width: auto;
+  height: 15%;
+  font-size: 0.9rem;
+  margin: 1%;
+  padding: 1.5%;
+  border-radius: 10px;
+  border-color: rgba(214, 160, 90, 0.699);
+}
+
+.btn_busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgb(195, 123, 28);
+  border-color: rgba(214, 160, 90, 0.699);
+  font-weight: bold;
+  width: alto;
+  height: 90%;
+  margin: 1%;
+  padding: 1.5%;
+  border-radius: 3px;
+}
+
+/******************** ESTILO DEL FOOTER ********************/
+.homeFooter {
+  background-color: rgb(195, 123, 28);
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 15px 5px rgba(36, 35, 35, 0.568);
+  border-radius: 0% 25% 0% 25%;
+}
+
+.homeFooter div a {
+  display: flex;
+  margin: 0.625rem;
+  letter-spacing: 0.125rem;
+  font-size: 0.75rem;
+  color: rgba(170, 38, 38, 0.8235294118);
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.homeFooter div ul {
+  margin: 0.625rem;
+  color: rgb(20, 20, 20);
+  font-weight: bolder;
+  letter-spacing: 0.1875rem;
+  font-size: 0.625rem;
+  padding: 5px;
+  font-style: italic;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.homeFooter .what .whatLink {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 2px 1px;
+  text-decoration: none;
+}
+
+.homeFooter .what .whatLink i {
+  width: 30%;
+  height: 30%;
+  font-size: 30px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/************ ESTILO DEL FORMULARIO DE CONTACTOS ************/
+.container .col-sm-9 .my-auto {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  max-width: auto;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtit {
+  display: flex;
+  color: rgba(20, 18, 18, 0.609);
+  font-weight: bold;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.form-control {
+  background-color: rgba(201, 190, 190, 0.544);
+  font-size: 0.8rem;
+  border-color: rgba(214, 160, 90, 0.699);
+  width: auto;
+  height: 35px;
+  display: flex;
+}
+
+span {
+  color: rgb(194, 47, 47);
+  font-size: 0.625rem;
+}
+
+.form-group label,
+label {
+  color: rgba(0, 0, 0, 0.642);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.form-group select option {
+  font-size: 0.6875rem;
+}
+
+.form-group input,
+input,
+.form-control,
+.input-group-text,
+.form-select {
+  font-size: 0.8rem;
+  color: rgba(84, 75, 71, 0.683);
+}
+
+.form-group textarea {
+  display: flex;
+  resize: auto;
+  width: 592px;
+  height: 250px;
+}
+
+.form-group p {
+  font-size: 0.7rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+
+/*********** Botones: Del Formulario de contactos **********/
+.form-group .btn {
+  color: rgb(195, 123, 28);
+  border-color: rgba(105, 91, 91, 0.74);
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group a {
+  font-size: 85%;
+}
+
+.form-group .btn:hover {
+  background-color: #000000;
+  color: rgb(230, 230, 223);
+  border-color: rgba(20, 18, 18, 0.609);
+  font-family: "Poppins", sans-serif;
+}
+
 /* Tipografia */
 /* Seteo Genérico */
 * {
