@@ -313,7 +313,7 @@ input,
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   padding: 10px;
   font-weight: bold;
   word-spacing: 8px;
@@ -331,7 +331,7 @@ h2 {
 }
 
 .text {
-  font-size: 15px;
+  font-size: 1.125rem;
   padding: 15px;
   text-align: center;
   color: rgba(241, 242, 247, 0.938);
