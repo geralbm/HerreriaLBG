@@ -12,10 +12,11 @@
 }
 
 /******************** ESTILO DEL LOGO ********************/
-.navbar a img {
+.header a img {
   @extend .imgLogo;
+
 }
-.navbar a img:hover {
+.header a img:hover {
   transform: scale(1.2);
 }
 
@@ -28,7 +29,8 @@ h1 {
   font-weight: bolder;
   letter-spacing: 5px;
   padding: 0;
-  margin: 0;
+  margin: 1px;
+  font-size: 1.75rem; 
   
 }
 /******** Estilos de Titulos de Sub - Páginas ********/
@@ -40,6 +42,7 @@ h2 {
   font-weight: bolder;
   letter-spacing: 5px;
   margin: 5px;
+  font-size: 1.5625rem;
 }
 /**************** Estilo de Menu & sub menu *************/
 
@@ -82,36 +85,4 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
-/******** Estilo de combo de Busqueda - Menu ********/
 
-.busqueda {
-  display: flex;
-  justify-content: center;
-  width: auto;
-}
-.busqueda input {
-  display: flex;
-  justify-content: right;
-  align-items: left;
-  width: auto;
-  height: 15%;
-  font-size: 0.9rem;
-  margin: 1%;
-  padding: 1.5%;
-  border-radius: 10px;
-  border-color: rgba(214, 160, 90, 0.699);
-}
-.btn_busqueda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-  color: rgb(195, 123, 28);
-  border-color: rgba(214, 160, 90, 0.699);
-  font-weight: bold;
-  width: alto;
-  height: 90%;
-  margin: 1%;
-  padding: 1.5%;
-  border-radius: 3px;
-}
